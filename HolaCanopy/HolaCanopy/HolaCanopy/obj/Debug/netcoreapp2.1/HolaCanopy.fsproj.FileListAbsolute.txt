@@ -1,0 +1,10 @@
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\bin\Debug\netcoreapp2.1\HolaCanopy.deps.json
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\bin\Debug\netcoreapp2.1\HolaCanopy.runtimeconfig.json
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\bin\Debug\netcoreapp2.1\HolaCanopy.runtimeconfig.dev.json
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\bin\Debug\netcoreapp2.1\HolaCanopy.dll
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\obj\Debug\netcoreapp2.1\HolaCanopy.fsprojAssemblyReference.cache
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\obj\Debug\netcoreapp2.1\HolaCanopy.AssemblyInfoInputs.cache
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\obj\Debug\netcoreapp2.1\HolaCanopy.AssemblyInfo.fs
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\bin\Debug\netcoreapp2.1\HolaCanopy.pdb
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\obj\Debug\netcoreapp2.1\HolaCanopy.dll
+C:\Users\WENDY\Desktop\HolaCanopy\HolaCanopy\HolaCanopy\obj\Debug\netcoreapp2.1\HolaCanopy.pdb
