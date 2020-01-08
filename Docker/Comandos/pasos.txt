@@ -1,0 +1,41 @@
+1.0.0- Instalamos Docker Desktop
+    En la capeta intalador.
+
+    1.2.0.- Verificamos la instalación.
+        -Abrimos el terminal (PowerShell) --> NO el PowerShellISO.
+        -Ejecutamos ____: docker --version
+
+    1.3.0.- Revisamos si nuestro equipo soporta virtualización.
+        -Para Windows 10.
+        1.3.1.-Instalamos (spsetup132.exe)
+                -Vemos si el equipo soporta virtualizaciones.
+2.0.0.- Intalamos DOcket TOOLBOX
+    se intalara:
+        Virtualbox
+        quitematick
+        quickstart
+    2.1.0.-arrancamos quitematick
+
+3.0.0 Intalar una imagen
+    mandar el comando ___: docker run hello-world
+
+    listar contenedores que se esten ejecutando
+        ___: docker ps
+    listar todos los contenedores.
+        ___: docker -a
+    borrar docker
+        docker rm (Nombre/o/ ID)
+    listar todas las imagenes 
+        docker images 
+    eliminar la imagen
+        ___: docker rmi _____:____
+        ___: docker rmi -f _____:_____
+    crear una imagen de un contenedor.
+        docker commit ___________ usuario/nombre_imagen
+    Cambiar nombre de la imagen.
+        docker tag __nombre_actual __nombre_nuevo
+    
+    Loggearte en docker hub para crear repositorios.
+        docker login
+    subir una imagen.
+        docker push ___nombre_imagen
