@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<!--cabecera-->
+<head>
+<meta charset="utf-8" />
+<!-- LLAMDOS A FUNCIONES Y ESTILOS MATERIAL DESIGN -->
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/materialLite.css">
+<!-- FUENTE DE ICONOS MATERIAL DESIGN -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--RESPONSIVE DESIGN-->
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<title>YANBAL</title>
+<!--FIN ETIQUETA <head>-->
+</head>
+<!--IN CABECERA-->
+</head>
+<!--cuerpo-->
+<body>
+	<!-- ENCABEZADO PESTANIAS FIJAS. -->
+	<div
+		class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs"
+		id="principal">
+		<header class="mdl-layout__header estilo-header">
+			<div class="mdl-layout__header-row estilo-header-prin">
+				<!-- TITULO APP -->
+				<img alt="logo" class="logoPrin" src="img/swoosh.png">
+				<!--<span class="mdl-layout-title fas1"  "></span>-->
+				<div class="mdl-layout-title mdl-layout-spacer fas1" id="barrita">Momentos</div>
+				<!-- MENU PUNTOS -->
+				<button
+					class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon-right icon-more-vert"
+					id="hdrbtn">
+					<i class="material-icons fas1">more_vert</i>
+				</button>
+				<ul
+					class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+					<li class="mdl-menu__item">Horarios</li>
+					<li class="mdl-menu__item">Lectores Digitales</li>
+					<li class="mdl-menu__item">Mis encuestas</li>
+					<li class="mdl-menu__item">Login</li>
+				</ul>
+				<!-- FIN MENU PUNTOS -->
+			</div>
+
+			<!-- MENU PRINCIPAL-->
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#fixed-tab-1" onclick="mstrTab('sub-mn-mnts-1.1')"
+					class="mdl-layout__tab is-active"><i class="material-icons">collections</i></a>
+				<a href="#fixed-tab-2" class="mdl-layout__tab"
+					onclick="mstrTab('sub-mn-mico-2.1')"><i class="material-icons">flip_to_front</i></a>
+				<a href="#fixed-tab-3" class="mdl-layout__tab"><i
+					class="material-icons">remove_red_eye</i></a> <a href="#fixed-tab-4"
+					class="mdl-layout__tab" onclick="mstrTab('sub-mn-miinf-4.1')"><i
+					class="material-icons">account_circle</i></a> <a href="#fixed-tab-5"
+					class="mdl-layout__tab"><i class="material-icons">description</i></a>
+			</div>
+		</header>
+		<!-- ******************************************CONTENIDO PRINCIPAL***************************************************** -->
+		<main class="mdl-layout__content"> <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^INICIO MOMENTOS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+			<div class="page-content">
+				<!--MENU MOMENTOS -->
+				<div class="mdl-layout__tab-bar alt-div-1">
+					<a onclick="subMenuMnts('1.1',this)"
+						class="mdl-layout__tab tit-sub-mn tit-1 estilo-sub-menu">Cobertura</a>
+					<a onclick="subMenuMnts('1.2',this)"
+						class="mdl-layout__tab tit-sub-mn estilo-sub-menu">Galería</a> <a
+						onclick="subMenuMnts('1.3',this)"
+						class="mdl-layout__tab tit-sub-mn estilo-sub-menu">Twitter</a> <a
+						onclick="subMenuMnts('1.4',this)"
+						class="mdl-layout__tab tit-sub-mn estilo-sub-menu">En vivo</a>
+				</div>
+				<main class="mdl-layout__content anc-div-1"> <!-- SECCION COBERTURA -->
+				<section class="mdl-layout__tab-panel is-active sub-sec-mnts "
+					id="sub-mn-mnts-1.1">
+					<div class="page-content">
+						<br>
+						<article class="mnt-art-1">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Momentos</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Mauris sagittis
+									pellentesque lacus eleifend lacinia... Lorem ipsum dolor sit
+									amet, consectetur adipiscing elit. Mauris sagittis pellentesque
+									lacus eleifend lacinia... Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit. Mauris sagittis pellentesque lacus
+									eleifend lacinia...</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<p>2018 Enero 17:00</p>
+									<a
+										class="mdl-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-position.right">
+										Ver </a>
+								</div>
+							</div>
+						</article>
+
+						<article class="mnt-art-1">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Momentos1</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Lorem ipsum dolor
+									sit amet, consectetur adipiscing elit. Mauris sagittis
+									pellentesque lacus eleifend lacinia... Lorem ipsum dolor sit
+									amet, consectetur adipiscing elit. Mauris sagittis pellentesque
+									lacus eleifend lacinia... Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit. Mauris sagittis pellentesque lacus
+									eleifend lacinia...</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<p>2018 Enero 19:00</p>
+									<a
+										class="mdl-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-position.right">
+										Ver </a>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- FIN SECCION COBERTURA -->
+				</section>
+				<!-- SECCION GALERIA -->
+				<section class="mdl-layout__tab-panel sub-sec-mnts"
+					id="sub-mn-mnts-1.2">
+					<div class="page-content">
+						<h3 class="galery">DÍA 1 - LOREM IPSUM DOLOR SIT AMET</h3>
+
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+						</div>
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+						</div>
+
+						<h3 class="galery">DÍA 2 - LOREM IPSUM DOLOR SIT AMET</h3>
+
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/ff.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/ff.jpg" style="width: 100%">
+							</div>
+						</div>
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/ff.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/ff.jpg" style="width: 100%">
+							</div>
+						</div>
+						<h3 class="galery">DÍA 3 - LOREM IPSUM DOLOR SIT AMET</h3>
+
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/swoosh.png" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/swoosh.png" style="width: 100%">
+							</div>
+						</div>
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="swoosh.png" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/swoosh.png" style="width: 100%">
+							</div>
+						</div>
+					</div>
+					<!-- FIN SECCION GALERIA -->
+				</section>
+				<!-- SECCION TWITTER -->
+				<section class="mdl-layout__tab-panel sub-sec-mnts anc-div-1"
+					id="sub-mn-mnts-1.3">
+					<div class="page-content">
+						<h3>CONTENIDO TWITTER</h3>
+
+						<section class="twitter">
+							<a class="twitter-timeline"
+								href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">TWITTER</a>
+							<script async src="https://platform.twitter.com/widgets.js"
+								charset="utf-8"></script>
+						</section>
+					</div>
+					<!-- FIN SECCION TWITTER -->
+				</section>
+				<!-- SECCION ENVIVO -->
+				<section class="mdl-layout__tab-panel sub-sec-mnts"
+					id="sub-mn-mnts-1.4">
+					<div class="page-content">
+						<br>
+						<div class="card-en-vivo">
+							<h5 class="letter-en-vivo">En vivo</h5>
+							<img class="card-hoteles-imagen" src="img/ndg.jpg"
+								alt="Noche de gala">
+						</div>
+						<br>
+						<div class="card-en-vivo">
+							<h5 class="letter-en-vivo">En vivo</h5>
+							<img class="card-hoteles-imagen" src="img/ndg.jpg"
+								alt="Noche de gala">
+						</div>
+						<br>
+						<div class="card-en-vivo">
+							<h5 class="letter-en-vivo">En vivo</h5>
+							<img class="card-hoteles-imagen" src="img/ndg.jpg"
+								alt="Noche de gala">
+						</div>
+					</div>
+					<!-- FIN SECCION EN VIVO -->
+				</section>
+				</main>
+			</div>
+			<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FIN MOMENTOS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		</section>
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^INICIO MI CONVENCION^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+			<div class="page-content">
+				<div class="mdl-layout__tab-bar alt-div-1">
+					<a onclick="subMenuMico('2.1',this)"
+						class="mdl-layout__tab tit-sub-mc titMc-1 estilo-sub-menu">HORARIOS</a>
+					<a onclick="subMenuMico('2.2',this)"
+						class="mdl-layout__tab tit-sub-mc estilo-sub-menu">RECOMENDACIONES</a>
+					<a onclick="subMenuMico('2.3',this)"
+						class="mdl-layout__tab tit-sub-mc estilo-sub-menu">LOOKS</a> <a
+						onclick="subMenuMico('2.4',this)"
+						class="mdl-layout__tab tit-sub-mc estilo-sub-menu">HOTELES</a>
+				</div>
+				<main class="mdl-layout__content anc-div-1">
+				<section class="mdl-layout__tab-panel sub-sec-mico"
+					id="sub-mn-mico-2.1">
+					<div class="page-content">
+						<!--SECCION HORARIOS -->
+
+
+						<!-- MENU HORARIOS-->
+						<div class="mdl-layout__tab-bar alt-div-1">
+							<a onclick="subMenuHrios('2.1.1',this)"
+								class="mdl-layout__tab tit-sub-hr titH-1">VIERNES</a> <a
+								onclick="subMenuHrios('2.1.2',this)"
+								class="mdl-layout__tab tit-sub-hr">SABADO</a> <a
+								onclick="subMenuHrios('2.1.3',this)"
+								class="mdl-layout__tab tit-sub-hr ">DOMIGO</a> <a
+								onclick="subMenuHrios('2.1.4',this)"
+								class="mdl-layout__tab tit-sub-hr">LUNES</a>
+						</div>
+
+						<main class="mdl-layout__content anc-div-1">
+						<section class="mdl-layout__tab-panel sub-sec-hrios is-active"
+							id="sub-mn-hrios-2.1.1">
+							<div class="page-content">
+
+								<div class="w3-container ">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.2">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>12:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>12:30</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.3">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>13:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:00</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.4">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td><p><button class="w3-btn w3-orange">Ver Look</button>
+												</p></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo Líderes<br>Lugar: Centro de
+												Convenciones
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						</main>
+						<!--** ******************************************FIN MENU HORARIOS*************************************** **-->
+					</div>
+					<!--** *************************************-FIN SECCION HORARIOS************************************* **-->
+				</section>
+				<section class="mdl-layout__tab-panel sub-sec-mico "
+					id="sub-mn-mico-2.2">
+					<div class="page-content">
+						<!-- SECCION RECOMENDACIONES -->
+						<div class="card-recomendaciones">
+							<img class="card-recomendaciones-imagen" src="img/swoosh.png"
+								alt="Yanbal Imagen">
+							<h5>Titulo</h5>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+							odio, vitae scelerisque enim ligula venenatis dolor.
+						</div>
+
+						<div class="card-recomendaciones">
+							<img class="card-recomendaciones-imagen" src="img/swoosh.png"
+								alt="Yanbal Imagen">
+							<h5>Titulo2</h5>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+							odio, vitae scelerisque enim ligula venenatis dolor.
+						</div>
+
+						<div class="card-recomendaciones">
+							<img class="card-recomendaciones-imagen" src="img/swoosh.png"
+								alt="Yanbal Imagen">
+							<h5>Titulo3</h5>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+							odio, vitae scelerisque enim ligula venenatis dolor.
+						</div>
+						<div class="card-recomendaciones">
+							<img class="card-recomendaciones-imagen" src="img/swoosh.png"
+								alt="Yanbal Imagen">
+							<h5>Titulo3</h5>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+							odio, vitae scelerisque enim ligula venenatis dolor.
+						</div>
+
+
+						<!--FIN SECCION RECOMENDACIONES -->
+					</div>
+				</section>
+				<section class="mdl-layout__tab-panel sub-sec-mico "
+					id="sub-mn-mico-2.3">
+					<div class="page-content">
+						<!-- SECCION LOOKS -->
+						<h3 class="galery">LOOK 1 - LOREM IPSUM DOLOR SIT AMET</h3>
+
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/ff3.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+						</div>
+						<div class="w3-row-padding w3-margin-top">
+							<div class="w3-half">
+								<img src="img/ff3.jpg" style="width: 100%">
+							</div>
+
+							<div class="w3-half">
+								<img src="img/img2.jpg" style="width: 100%">
+							</div>
+						</div>
+						<!-- FIN SECCION LOOKS -->
+					</div>
+				</section>
+				<section class="mdl-layout__tab-panel sub-sec-mico "
+					id="sub-mn-mico-2.4">
+					<div class="page-content">
+						<!-- SECCION HOTELES -->
+						<article class="mnt-art-1">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+								<div class="card-hoteles ">
+									<h2 class="mdl-card__title-text ">Sheraton</h2>
+								</div>
+							</div>
+						</article>
+						<article class="mnt-art-1">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+								<div class="card-hoteles-1">
+									<h2 class="mdl-card__title-text ">Marriot</h2>
+								</div>
+							</div>
+						</article>
+						<article class="mnt-art-1">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+								<div class="card-hoteles-2 ">
+									<h2 class="mdl-card__title-text ">Hilton Colón</h2>
+								</div>
+							</div>
+						</article>
+						<!-- FIN SECCION HOTELES -->
+					</div>
+				</section>
+				</main>
+			</div>
+			<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FIN MI CONVENCION!!^^^^^^^^^^^^^^^^^^^^^^^^^^^`^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		</section>
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^INICIO LECTORES DIGITALES^^^^^^^^^^^^^^^^^^^^^^^^^^^`^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-3">
+			<div class="page-content">
+				<!-- SECCION LECTORES D. -->
+				<!--  <div class="card-lectores-digitales">
+	<img class="card-lectores-digitales-imagen" src="img/qr1.png" alt="Yanbal Imagen">
+		<h4>Lectror 1</h4>
+		<h6>Lectores de códigos QR</h6>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi 	lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+			</p>
+</div>
+<br>
+<div class="card-lectores-digitales">
+	<img class="card-lectores-digitales-imagen" src="img/qr2.png" alt="Yanbal Imagen">
+		<h4>Lector 2</h4>
+	<h6>Lectores de códigos QR</h6>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+			</p>
+</div>-->
+				<div class="lectores">
+					<table>
+						<tr>
+							<td>
+								<h4>Lector 1</h4>
+								<h5>Lectores de códigos QR</h5>
+								<aside>Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+									nisilorem egestas odio, vitae scelerisque enim ligula venenatis
+									dolor.</aside>
+							</td>
+							<td>
+							<img class="img-lectores" src="img/qr2.png" alt="Yanbal Imagen">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!-- FIN SECCION LECTORES D. -->
+			</div>
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FIN LECTORES DIGITALES^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		</section>
+		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^MI INFORMACION^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-4">
+			<div class="page-content">
+				<!-- MENU MI INFORMACION -->
+				<div class="mdl-layout__tab-bar alt-div-1">
+					<a onclick="subMenuMiInf('4.1',this)"
+						class="mdl-layout__tab tit-sub-miinf titMif-1 estilo-sub-menu">PRE
+						REGISTROS</a> <a onclick="subMenuMiInf('4.2',this)"
+						class="mdl-layout__tab tit-sub-miinf estilo-sub-menu">MIS
+						DATOS</a> <a onclick="subMenuMiInf('4.3',this)"
+						class="mdl-layout__tab tit-sub-miinf estilo-sub-menu">MIS
+						RECORDATORIOS</a>
+
+				</div>
+				<main class="mdl-layout__content">
+				<div class="layout-pre-registro">
+					<section class="mdl-layout__tab-panel is-active sub-sec-miinf"
+						id="sub-mn-miinf-4.1">
+						<div class="page-content">
+							<!-- SECCION PRE-REGISTROS -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+								egestas odio,</p>
+							<img class="img-pre" src="img/usuario.jpg"> <br> <br>
+							<input type="button" class="pre-reg-btn" value="Subir foto">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="button" class="pre-reg-btn" value="Tomar foto">
+							<div>
+								<br>
+								<form class="w3-container">
+
+									<label class="position-label-pre-reg">Correo
+										Electrónico</label>
+									<p>
+										<input class="w3-input" type="text">
+									</p>
+									<label class="position-label-pre-reg">Celular</label>
+									<p>
+										<input class="w3-input" type="text">
+									</p>
+
+									<input class="enviar" type="submit"
+										value="TERMINAR PREREGISTRO">
+								</form>
+
+
+
+							</div>
+							<!-- FIN SECCION PRE-REGISTROS -->
+						</div>
+					</section>
+				</div>
+				<div class="layout-mi-informacion">
+					<section class="mdl-layout__tab-panel sub-sec-miinf anc-div-1"
+						id="sub-mn-miinf-4.2">
+						<div class="page-content ">
+							<!-- SECCION MIS DATOS -->
+							<h3 style="color: #ec6b00">María Ines Gutierrez Valverde</h3>
+							<h5>Directora Senior</h5>
+							<h6>99999999999</h6>
+							<h6>Region 4 - Manta</h6>
+							<h6>Hotel: SHERATON, Guayaquil</h6>
+							<img src="img/qr1.png">
+							<p>Presenta tu código QR al momento de registrarte con el
+								staff de yanbal en el hotel asignado</p>
+							<!-- FIN SECCION MIS DATOS -->
+						</div>
+					</section>
+				</div>
+				<section class="mdl-layout__tab-panel sub-sec-miinf"
+					id="sub-mn-miinf-4.3">
+					<div class="page-content">
+						<!-- SECCION MIS RECORDATORIOS -->
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum..
+						</div>
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<div class=".card-mis-recordatorios">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<div class="card-lectores-digitales">
+							<i class="material-icons icon-not">notifications</i> Lorem ipsum
+							dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+							nibh euismod tincidunt ut v. Lorem ipsum.
+						</div>
+						<!-- FIN SECCION MIS RECORDATORIOS -->
+					</div>
+				</section>
+				</main>
+			</div>
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FIN MI INFORMACION^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		</section>
+		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ENCUESTAS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^` -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-5">
+			<div class="page-content">
+				<!-- SECCION ENCUESTAS -->
+				<!--primera parte encuesta-->
+				<div class="w3-container">
+
+					<div class="w3-cell-row">
+						<div class="w3-cell">
+							<i class="material-icons fas">error</i>
+						</div>
+						<div class="w3-cell w3-container">
+							<h3 class="position-titulo">¡Yanbalista!</h3>
+							<p>
+								Debes indicar que todas las encuestas han sido contestadas para
+								hacer tu check out en el lobby del hotel. <b class="negrita">*
+									Es un requisito indispensable. </b>
+							</p>
+						</div>
+					</div>
+					<hr>
+					<!--fin primera parte encuesta-->
+					<h5>Lista de Encuestas</h5>
+					<!-- FIN SECCION ENCUESTAS -->
+				</div>
+			</div>	
+				<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FIN ENCUESTAS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+				<form class="check" action="#" method="get">
+					<h4>APERTURA</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+					<input class="input-check" type="checkbox" value="E1">
+
+				</form>
+				<br>
+				<form class="check" action="#" method="get">
+					<h4>NOCHE DE GALA</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+					<input class="input-check" type="checkbox" value="E1">
+
+				</form>
+				<br>
+				<form class="check" action="#" method="get">
+					<h4>ENTREGA DE AUTOS</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+					<input class="input-check" type="checkbox" value="E1">
+
+				</form>
+				<br>
+				<form class="check" action="#" method="get">
+					<h4>HOTEL</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+					<input class="input-check" type="checkbox" value="E1">
+
+				</form>
+		</section>
+		<!--************************************************* FIN CONTENIDO PRINCIPAL************************************* -->
+		</main>
+		<!-- IN PESTAÑAS FIJAS -->
+	</div>
+	<!--FIN CUERPO-->
+	<!-- SCRIPTS DE PAGWEB -->
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

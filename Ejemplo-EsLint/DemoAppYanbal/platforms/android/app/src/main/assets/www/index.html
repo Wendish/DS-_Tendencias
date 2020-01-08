@@ -1,0 +1,3721 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo App Convencion 2018</title>
+
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/material.min.css">
+<script src="js/material.min.js"></script>
+<script src="js/hammer.js"></script>
+<link rel="stylesheet" href="css/icon.css">
+<link rel="stylesheet" href="css/convencion.css">
+<script src="js/demo.js"></script>
+<script src="js/looks.js"></script>
+
+</head>
+
+<body onload="initApp()">
+	<!-- Simple header with fixed tabs. -->
+	<div id="contenerdorPrincipalApp"
+		class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+				mdl-layout--fixed-tabs">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row"
+				style="padding-left: 16px !important;">
+				<img src="img/swoosh.png" alt="yanbal" width="40"
+					style="margin-right: 15px;" />
+				<div class="mdl-layout-spacer">
+					<span class="mdl-layout-title" id="spanTitulo">Momentos</span>
+				</div>
+				<!-- Right aligned menu below button -->
+				<button id="demo-menu-lower-right"
+					class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">&#xE5D4;</i>
+				</button>
+
+				<ul
+					class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					for="demo-menu-lower-right">
+					<li class="mdl-menu__item" onclick="opcMenuSup(2)">Horarios</li>
+					<li class="mdl-menu__item">Lectores Digitales</li>
+					<li class="mdl-menu__item">Mis Encuestas</li>
+					<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+				</ul>
+
+			</div>
+			<!-- Tabs -->
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect"
+				id="cnt-tabs-app">
+				<a href="#fixed-tab-1" class="mdl-layout__tab is-active"
+					onclick="menuPrincipal('MOM')"><i class="material-icons">&#xE413;</i>
+					<div class="menu_title_text">MOMENTOS</div></a> <a href="#fixed-tab-2"
+					id="link_mnu_prc_mic" class="mdl-layout__tab"
+					onclick="menuPrincipal('MIC')"><i class="material-icons">&#xE02F;</i>
+					<div class="menu_title_text">MI CONVENCIÓN</div></a> <a
+					href="#fixed-tab-3" class="mdl-layout__tab"
+					onclick="menuPrincipal('LEC')"><i class="material-icons">&#xE8F4;</i>
+					<div class="menu_title_text">LECTOR DIGITAL</div></a> <a
+					href="#fixed-tab-4" class="mdl-layout__tab"
+					onclick="menuPrincipal('MII')"><i class="material-icons">&#xE853;</i>
+					<div class="menu_title_text">MI INFORMACIÓN</div></a> <a
+					href="#fixed-tab-5" class="mdl-layout__tab"
+					onclick="menuPrincipal('ENC')"><i class="material-icons">&#xE873;</i>
+					<div class="menu_title_text">ENCUESTAS</div></a>
+			</div>
+		</header>
+		<main class="mdl-layout__content" style="width: 100%" id="mainCont">
+		<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+			<div class="page-content">
+				<div class="second-menu">
+					<!-- Aqui va el menu por página -->
+					<div class="mdl-layout__tab-bar"
+						style="background-color: #f5f4f4 !important; height: auto;">
+						<a href="#fixed-tab-1" id="MOM-1"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)"><div
+								class="menu_title">Cobertura</div></a> <a href="#fixed-tab-1"
+							id="MOM-2" class="mdl-layout__tab mdl-submenu"
+							onclick="openMenu(this.id)""><div class="menu_title">Galería</div></a>
+						<a href="#fixed-tab-1" id="MOM-3"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)""><div
+								class="menu_title">Twitter</div></a> <a href="#fixed-tab-1"
+							id="MOM-4" class="mdl-layout__tab mdl-submenu"
+							onclick="openMenu(this.id)""><div class="menu_title">En
+								Vivo</div></a>
+					</div>
+				</div>
+				<main class="mdl-layout__content"> <!--  SECCION COBERTURA -->
+				<section class="mdl-layout__tab-panel mdl-submenu-content active"
+					id="MOM-1-content">
+					<div class="page-content" id="contenedorPostCobertura"></div>
+				</section>
+
+				<!--  SECCION GALERIA -->
+				<section class="mdl-layout__tab-panel mdl-submenu-content"
+					id="MOM-2-content">
+					<div class="page-content">
+						<div class="title-gallery">
+							<p>DÍA 1 - LOREM IPSUM DOLOR SIT AMET</p>
+
+						</div>
+						<div class="mdl-grid galeria-grid">
+							<a href="galeria.html" style="text-decoration: none;">
+								<div
+									class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+									<div class="mdl-card__title mdl-card--expand"></div>
+									<div class="mdl-card__actions" style="text-align: center;">
+										<span class="demo-card-image__filename">Almuerzo
+											Líderes</span>
+									</div>
+								</div>
+							</a> <a href="galeria.html" style="text-decoration: none;">
+								<div
+									class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+									<div class="mdl-card__title mdl-card--expand"></div>
+									<div class="mdl-card__actions" style="text-align: center;">
+										<span class="demo-card-image__filename">Primera
+											Convención</span>
+									</div>
+								</div>
+							</a> <a href="galeria.html" style="text-decoration: none;">
+								<div
+									class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+									<div class="mdl-card__title mdl-card--expand"></div>
+									<div class="mdl-card__actions" style="text-align: center;">
+										<span class="demo-card-image__filename">Apertura</span>
+									</div>
+								</div>
+							</a> <a href="galeria.html" style="text-decoration: none;">
+								<div
+									class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+									<div class="mdl-card__title mdl-card--expand"></div>
+									<div class="mdl-card__actions" style="text-align: center;">
+										<span class="demo-card-image__filename">Otros Momentos</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="mdl-layout__tab-panel mdl-submenu-content"
+					id="MOM-3-content">
+					<div class="page-content">FRAME</div>
+				</section>
+				<section class="mdl-layout__tab-panel mdl-submenu-content envivo"
+					id="MOM-4-content">
+					<div class="page-content">
+						<div class="mdl-grid">
+							<!-- INICIO DIV EN VIVO 1 -->
+							<a onclick="abrirEnVivo(1)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="link-envivo">
+										<span style="float: right;">&nbsp;EN VIVO</span> <i
+											class="material-icons"
+											style="font-size: 1.3em; margin-top: 2px;">&#xE061; </i>
+									</div>
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/apertura_ejemplo.jpg') center/cover;">
+										<span
+											style="font-size: 9pt; position: absolute; bottom: 72px;">6
+											de Abril, 2018</span>
+										<h2 class="mdl-card__title-text">Apertura “Somos Smart
+											Somos Yanbal”</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<span class="mdl-card__supporting-text">28 de Mayo,
+											2017</span> <a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div> <!-- FIN DIV EN VIVO 1 -->
+							</a>
+							<!-- INICIO DIV EN VIVO 2 -->
+							<a onclick="abrirEnVivo(2)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="link-envivo">
+										<span style="float: right;">&nbsp;EN VIVO</span> <i
+											class="material-icons"
+											style="font-size: 1.3em; margin-top: 2px;">&#xE061; </i>
+									</div>
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/gala_ejemplo2.jpg') center/cover;">
+										<span
+											style="font-size: 9pt; position: absolute; bottom: 45px;">7
+											de Abril, 2018</span>
+										<h2 class="mdl-card__title-text">Noche de Gala</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<span class="mdl-card__supporting-text">7 de Abril,
+											2018</span> <a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div> <!-- FIN DIV EN VIVO 2 -->
+							</a>
+							<!-- INICIO DIV EN VIVO 3 -->
+							<a onclick="abrirEnVivo(3)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="link-envivo">
+										<span style="float: right;">&nbsp;EN VIVO</span> <i
+											class="material-icons"
+											style="font-size: 1.3em; margin-top: 2px;">&#xE061; </i>
+									</div>
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/autos_ejemplo.jpg') center/cover;">
+										<span
+											style="font-size: 9pt; position: absolute; bottom: 45px;">8
+											de Abril, 2018</span>
+										<h2 class="mdl-card__title-text">Entrega de Autos</h2>
+									</div>
+
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<span class="mdl-card__supporting-text">8 de Abril,
+											2018</span> <a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div> <!-- FIN DIV EN VIVO 3 -->
+							</a>
+						</div>
+					</div>
+				</section>
+				</main>
+			</div>
+		</section>
+
+		<!-- MI CONVENCION -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+			<div class="page-content">
+				<!-- Your content goes here -->
+				<div class="second-menu">
+					<!-- Aqui va el menu por página -->
+					<div class="mdl-layout__tab-bar cnt-mnu-mmnts"
+						style="background-color: #f5f4f4 !important; height: auto;">
+						<a href="#fixed-tab-2" id="MIC-1"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)">
+							<div class="menu_title">HORARIOS</div>
+						</a> <a href="#fixed-tab-2" id="MIC-2"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)"><div
+								class="menu_title">RECOMENDACIONES</div></a> <a href="#fixed-tab-2"
+							id="MIC-3" class="mdl-layout__tab mdl-submenu"
+							onclick="openMenu(this.id)"><div class="menu_title">LOOKS</div></a>
+						<a href="#fixed-tab-2" id="MIC-4"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)"><div
+								class="menu_title">HOTELES</div></a>
+					</div>
+				</div>
+
+				<main class="mdl-layout__content" style="width:100%"> <!--  SECCION HORARIOS -->
+				<section
+					class="mdl-layout__tab-panel mdl-submenu-content active horarios"
+					id="MIC-1-content">
+					<div class="page-content">
+						<!-- MENU HORARIOS-->
+						<div class="mdl-layout__tab-bar alt-div-1 txt-sz-1">
+							<a onclick="subMenuHrios('2.1.1',this)" id="dia-2.1.1"
+								class="mdl-layout__tab tit-sub-hr">VIERNES</a> <a
+								onclick="subMenuHrios('2.1.2',this)" id="dia-2.1.2"
+								class="mdl-layout__tab tit-sub-hr ">SÁBADO</a> <a
+								onclick="subMenuHrios('2.1.3',this)" id="dia-2.1.3"
+								class="mdl-layout__tab tit-sub-hr ">DOMINGO</a> <a
+								onclick="subMenuHrios('2.1.4',this)" id="dia-2.1.4"
+								class="mdl-layout__tab tit-sub-hr ">LUNES</a>
+						</div>
+
+						<main class="mdl-layout__content anc-div-1">
+						<section class="mdl-layout__tab-panel sub-sec-hrios is-active"
+							id="sub-mn-hrios-2.1.1">
+							<div class="page-content">
+
+								<div class="w3-container ">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Almuerzo de Líderes<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Por
+													Confirmar</span>
+											</td>
+											<td></td>
+											<td>11:00</td>
+										</tr>
+										<tr>
+											<td>Registro Mi Primera Convención en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>14:30</td>
+										</tr>
+										<tr>
+											<td>Registro General en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>15:00</td>
+										</tr>
+										<tr>
+											<td>Momento Mi Primera Convención<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Convenciones</span>
+											</td>
+											<td></td>
+											<td>15:30</td>
+										</tr>
+										<tr>
+											<td>Cena Mi Primera Convención<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Por
+													Confirmar</span>
+											</td>
+											<td></td>
+											<td>17:30</td>
+										</tr>
+										<tr>
+											<td>Cena General en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>18:00</td>
+										</tr>
+										<tr>
+											<td>Salida de Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>19:30</td>
+										</tr>
+										<tr>
+											<td>Apertura : "Somos Smart Somos Yanbal"<br>
+											<span class="txt-med">Lugar: </span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>20:30</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.2">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Desayuno<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>7:00</td>
+										</tr>
+										<tr>
+											<td>Salida de Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>8:00</td>
+										</tr>
+										<tr>
+											<td>Mundo de la Incorporación Y Desarrollo de Redes<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>9:00</td>
+										</tr>
+										<tr>
+											<td>Lanzamiento APP<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>10:00</td>
+										</tr>
+										<tr>
+											<td>Coffee Break<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>11:30</td>
+										</tr>
+										<tr>
+											<td>Salida a Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Hotel Respectivo</span>
+											</td>
+											<td></td>
+											<td>11:30</td>
+										</tr>
+										<tr>
+											<td>Capacitación APP<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Asignado</span>
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+										<tr>
+											<td>Almuerzo en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Asignado</span>
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Cena en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>17:30</td>
+										</tr>
+										<tr>
+											<td>Salida de Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>18:30</td>
+										</tr>
+										<tr>
+											<td>Pre Gala<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>19:30</td>
+										</tr>
+										<tr>
+											<td>Noche de Gala<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>20:30</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.3">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Desayuno<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>7:00</td>
+										</tr>
+										<tr>
+											<td>Salida de Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>8:00</td>
+										</tr>
+										<tr>
+											<td>Mundo de la Venta y Demostración<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>9:00</td>
+										</tr>
+										<tr>
+											<td>Coffee Break<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>10:30</td>
+										</tr>
+										<tr>
+											<td>Motivación<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>11:00</td>
+										</tr>
+										<tr>
+											<td>Salida a Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Hotel Respectivo</span>
+											</td>
+											<td></td>
+											<td>13:30</td>
+										</tr>
+										<tr>
+											<td>Almuerzo en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>14:00</td>
+										</tr>
+										<tr>
+											<td>Cena en Hoteles<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>17:30</td>
+										</tr>
+										<tr>
+											<td>Salida de Hoteles<br>
+											<span class="txt-med">Destino:</span> <span
+												class="txt-bld-med">Centro de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>18:45</td>
+										</tr>
+										<tr>
+											<td>Entrega de Autos<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>19:30</td>
+										</tr>
+										<tr>
+											<td>Cóctel de Cierre<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>21:30</td>
+										</tr>
+										<tr>
+											<td>Fiesta de Clausura<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Centro
+													de Exposiciones</span>
+											</td>
+											<td></td>
+											<td>22:30</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						<section class="mdl-layout__tab-panel sub-sec-hrios"
+							id="sub-mn-hrios-2.1.4">
+							<div class="page-content">
+
+								<div class="w3-container">
+
+									<table class="w3-table w3-striped w3-theme-l1">
+										<tr>
+											<td>Desayuno<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>7:00-10:00</td>
+										</tr>
+										<tr>
+											<td>Check Out<br>
+											<span class="txt-med">Lugar:</span> <span class="txt-bld-med">Hotel
+													Respectivo</span>
+											</td>
+											<td></td>
+											<td>12:00</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</section>
+						</main>
+						<!-- fin horarios -->
+
+					</div>
+				</section>
+				<!--  SECCION RECOMENDACIONES -->
+				<section
+					class="mdl-layout__tab-panel mdl-submenu-content active recomendaciones"
+					id="MIC-2-content">
+					<div class="page-content">
+						<a onclick="abrirRecomendacion(1)" style="text-decoration: none;">
+							<div
+								class="mdl-card mdl-shadow--2dp mdl-card--horizontal_right mdl-card--horizontal mdl-rec-lst">
+								<div class="mdl-card__title"
+									style="border-top: 1px solid #f5f4f4;">
+									<h2
+										class="mdl-card__title-text mdl-card__title-text-recomendaciones">Antes
+										de Convención</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Estos son los
+									primeros pasos que debes realizar antes de tu Convención</div>
+								<div class="mdl-card__media_right">
+									<img src="img/antes_convencion_small.jpg" alt="img"
+										width="100%" style="position: absolute; top: -70px;">
+								</div>
+							</div>
+						</a> <a onclick="abrirRecomendacion(2)" style="text-decoration: none;">
+							<div
+								class="mdl-card mdl-shadow--2dp mdl-card--horizontal_right mdl-card--horizontal mdl-rec-lst">
+								<div class="mdl-card__title"
+									style="border-top: 1px solid #f5f4f4;">
+									<h2
+										class="mdl-card__title-text mdl-card__title-text-recomendaciones">Hoteles
+										y Estadía</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Te presentamos
+									algunas sugerencias que debes tomar en cuenta para que tu
+									estadía sea memorable</div>
+								<div class="mdl-card__media_right">
+									<img src="img/hoteles_small.jpg" alt="img" width="100%"
+										style="position: absolute; top: -70px;">
+								</div>
+							</div>
+						</a> <a onclick="abrirRecomendacion(3)" style="text-decoration: none;">
+							<div
+								class="mdl-card mdl-shadow--2dp mdl-card--horizontal_right mdl-card--horizontal mdl-rec-lst">
+								<div class="mdl-card__title"
+									style="border-top: 1px solid #f5f4f4;">
+									<h2
+										class="mdl-card__title-text mdl-card__title-text-recomendaciones">Traslados
+										y Movilización</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Para tu comodidad,
+									contaremos con servicio de transporte hacia los diferentes
+									eventos.</div>
+								<div class="mdl-card__media_right">
+									<img src="img/transporte_small.jpg" alt="img" width="100%"
+										style="position: absolute; top: -93px;">
+								</div>
+							</div>
+						</a> <a onclick="abrirRecomendacion(4)" style="text-decoration: none;">
+							<div
+								class="mdl-card mdl-shadow--2dp mdl-card--horizontal_right mdl-card--horizontal mdl-rec-lst">
+								<div class="mdl-card__title"
+									style="border-top: 1px solid #f5f4f4;">
+									<h2
+										class="mdl-card__title-text mdl-card__title-text-recomendaciones">Asistencia
+										Médica</h2>
+								</div>
+								<div class="mdl-card__supporting-text">Revisa las
+									siguientes recomendaciones médicas para que disfrutes de tu
+									Convención</div>
+								<div class="mdl-card__media_right">
+									<img src="img/asistencia_medica_small.jpg" alt="img"
+										width="100%" style="position: absolute; top: -42px;">
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+				<!--  SECCION LOOKS -->
+				<section class="mdl-layout__tab-panel mdl-submenu-content active"
+					id="MIC-3-content">
+					<div class="page-content">
+
+						<div class="mdl-grid galeria-grid">
+							<div class="cnt-img-looks">
+								<div onclick="abrirLook(1)">
+									<div>Lorem ipsum </div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+								<div onclick="abrirLook(2)">
+									<div>Lorem ipsum am me da et erm</div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+								<div onclick="abrirLook(3)">
+									<div>Lorem ipsum am me da et erm</div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+								<div onclick="abrirLook(4)">
+								<div>Lorem ipsum am me da et erm</div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+								<div onclick="abrirLook(5)">
+									<div>Lorem ipsum am me da et erm</div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+								<div onclick="abrirLook(6)">
+									<div>Lorem ipsum am me da et erm</div>
+									<img src="img/album.jpg"
+										class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+				<!--  SECCION HOTELES -->
+				<section
+					class="mdl-layout__tab-panel mdl-submenu-content active hoteles"
+					id="MIC-4-content">
+					<div class="page-content">
+						<div class="mdl-grid">
+							<a onclick="abrirHotel(1)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/marriot.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">JW Marriot Quito</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(2)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/swissotel.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Swissotel Quito</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(3)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/sheraton.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Sheraton</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(4)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/hilton_colon.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Hiltón Colón</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(5)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/wyndham.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Wyndham Garden</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(6)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/nh.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Nh Collection</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(7)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/dan_carlton.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Dann Carlton</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(8)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/hotel_quito.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Hotel Quito</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(9)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/holliday_inn.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Holiday Inn</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a> <a onclick="abrirHotel(10)" style="text-decoration: none;">
+								<div
+									class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop"
+									style="height: 100%;">
+									<div class="mdl-card__title"
+										style="width: 100%; height: 200px; background: url('img/mercure.jpg') center/cover;">
+										<h2 class="mdl-card__title-text tit-hot">Mercure</h2>
+									</div>
+									<div class="mdl-card__actions mdl-card--border"
+										style="display: none;">
+										<a
+											class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+											VER </a>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+				</main>
+				<!-- fin mi convenion -->
+			</div>
+		</section>
+
+
+		<!-- LECTORES DIGITALES -->
+		<section class="mdl-layout__tab-panel digital" id="fixed-tab-3">
+			<div class="page-content">
+				<!-- Your content goes here -->
+
+				<div
+					class="mdl-card mdl-shadow--2dp mdl-card--horizontal mdl-card--horizontal_right"
+					style="min-height: 250px;">
+
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text"
+							style="color: #868489; align-self: auto; font-size: 16px;">Lector
+							QR</h2>
+					</div>
+					<div class="mdl-card__supporting-text"
+						style="font-size: 12px; padding-top: 0;">
+						<br> Con esta opción escanea la identificación SMART de
+						Yanbalistas en Convención y guarda su contacto. Escanea los
+						CONTENIDOS SMART de tu cuaderno de Convención y descárgalos para
+						verlos en casa.
+					</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a
+							class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							data-upgraded=",MaterialButton,MaterialRipple">Usar Lector</a>
+					</div>
+					<div class="mdl-card__media_right">
+						<img src="img/escaner_qr.jpg" alt="img" width="100%">
+					</div>
+				</div>
+
+				<div
+					class="mdl-card mdl-shadow--2dp mdl-card--horizontal mdl-card--horizontal_right"
+					style="min-height: 250px;">
+
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text"
+							style="color: #868489; align-self: auto; font-size: 16px;">Lector
+							de Realidad Aumentada</h2>
+					</div>
+					<div class="mdl-card__supporting-text"
+						style="font-size: 12px; padding-top: 0;">
+						<br> Busca el título TORRE SMART durante toda la convención y
+						escanea proyecciones Yanbal en 3D. Escanea las hojas INSERTO SMART
+						de tu cuaderno de Convención para ver tu video resumen después de
+						Convención.
+					</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a
+							class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							data-upgraded=",MaterialButton,MaterialRipple">Usar Lector</a>
+					</div>
+					<div class="mdl-card__media_right">
+						<img src="img/escaner_ar.jpg" alt="img" width="100%">
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+		</section>
+		<!-- MI INFORMACION -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-4">
+			<div class="page-content">
+				<div class="second-menu">
+					<!-- Aqui va el menu por página -->
+					<div class="mdl-layout__tab-bar" id="cnt-mnu-inf-log"
+						style="background-color: #f5f4f4 !important; height: auto; display: none;">
+						<a href="#fixed-tab-1" id="MII-1"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)">
+							<div class="menu_title" id="MII-1-titulo">Pre Registro</div>
+						</a> <a href="#fixed-tab-1" id="MII-2"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)"">
+							<div class="menu_title">Mis Datos</div>
+						</a> <a href="#fixed-tab-1" id="MII-3"
+							class="mdl-layout__tab mdl-submenu" onclick="openMenu(this.id)""><div
+								class="menu_title">Mis Recordatorios</div></a>
+					</div>
+				</div>
+
+				<div id="panel-login">
+					<div style="height: 120px; position: relative;">
+						<div class="div-imagen">
+							<i class="material-icons">&#xE853;</i>
+						</div>
+						<div class="div-contenido">
+							<div class="titulo">Ingresa a tu información</div>
+							<div class="texto">Consulta tu código QR para tu registro
+								Yanbal</div>
+						</div>
+						<button class="mdl-card w3-btn btn-iniciar-sesion"
+							onclick="abrirLogin()">INICIAR SESIÓN</button>
+					</div>
+				</div>
+
+
+
+				<main class="mdl-layout__content">
+				<div class="layout-pre-registro">
+					<section
+						class="mdl-layout__tab-panel is-active mdl-submenu-content"
+						id="MII-1-content">
+						<div class="page-content">
+							<!-- SECCION PRE-REGISTROS -->
+							<div style="text-align: center; padding: 20px;">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+									egestas odio,</p>
+								<img id="imagenPequeña" class="img-pre" src="img/usuario.jpg"> <br /> <br />
+								<div class="mdl-grid">
+									<button class="mdl-card w3-btn boton-foto"
+										onclick="">SUBIR FOTO</button>
+
+									<button class="mdl-card w3-btn boton-foto"
+										onclick="capturePhoto()">TOMAR FOTO</button>
+								</div>
+								<div>
+									<form class="w3-container"
+										style="margin-top: 30px; margin-bottom: 30px; font-size: 1.2em">
+										<input class="w3-input" type="text"
+											placeholder="Correo Electrónico" id="usuario-txt-email">
+										<input class="w3-input" type="text" placeholder="Celular"
+											id="usuario-txt-celular"> <input
+											class="w3-btn boton-enviar" type="button"
+											onclick="preRegistro()" value="TERMINAR PREREGISTRO">
+									</form>
+								</div>
+								<p style="color: #757575; font-size: 0.9em">Lorem ipsum
+									dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+									nibh euismod tincidunt ut v</p>
+							</div>
+							<!-- FIN SECCION PRE-REGISTROS -->
+						</div>
+					</section>
+				</div>
+				<div class="layout-mi-informacion">
+					<section class="mdl-layout__tab-panel mdl-submenu-content"
+						id="MII-2-content">
+						<div class="page-content">
+							<!-- SECCION MIS DATOS -->
+							<h3 style="color: #ec6b00" id="usuario-nombre"></h3>
+							<h5 id="usuario-status"></h5>
+							<h6 id="usuario-codigo"></h6>
+							<h6 id="usuario-region"></h6>
+							<h6 id="usuario-hotel"></h6>
+							<img src="img/qr1.png">
+							<p style="color: #757575; font-size: 0.9em; margin-top: 12px">Presenta
+								tu código QR al momento de registrarte con el staff de yanbal en
+								el hotel asignado</p>
+							<!-- FIN SECCION MIS DATOS -->
+						</div>
+					</section>
+				</div>
+				<section class="mdl-layout__tab-panel mdl-submenu-content"
+					id="MII-3-content">
+					<div class="page-content">
+						<!-- SECCION MIS RECORDATORIOS -->
+
+						<div class="recordatorio">
+							<div style="height: 78px">
+								<div class="div-imagen">
+									<i class="material-icons icon-not">notifications</i>
+								</div>
+								<div class="div-contenido">
+									<div class="texto">Lorem ipsum dolor sit amet,
+										consectetuer adipiscing elit, sed diam nonummy nibh euismod
+										tincidunt ut</div>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div class="recordatorio">
+							<div style="height: 78px">
+								<div class="div-imagen">
+									<i class="material-icons icon-not">notifications</i>
+								</div>
+								<div class="div-contenido">
+									<div class="texto">Lorem ipsum dolor sit amet,
+										consectetuer adipiscing elit, sed diam nonummy nibh euismod
+										tincidunt ut</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+						<!-- FIN SECCION MIS RECORDATORIOS -->
+					</div>
+				</section>
+				</main>
+
+			</div>
+		</section>
+		<!-- ENCUESTAS -->
+		<section class="mdl-layout__tab-panel" id="fixed-tab-5">
+			<!-- LOGin  -->
+			<div id="panel-login-1">
+				<div style="height: 120px; position: relative;">
+					<div class="div-imagen">
+						<i class="material-icons">&#xE853;</i>
+					</div>
+					<div class="div-contenido">
+						<div class="titulo">Ingresa a tu información</div>
+						<div class="texto">Consulta tu código QR para tu registro
+							Yanbal</div>
+					</div>
+					<button class="mdl-card w3-btn btn-iniciar-sesion"
+						onclick="abrirLogin()">INICIAR SESIÓN</button>
+				</div>
+			</div>
+			<!-- directo a la encuesta  -->
+			<div class="page-content" id="cnt-enc-usr" style="display: none;">
+				<div class="w3-cell-row">
+					<div>
+						<i class="ico-encuesta">error</i>
+					</div>
+					<div class="w3-cell w3-container">
+						<h4 class="position-titulo">¡Yanbalista!</h4>
+						<p class="justicar txt-hdr-enc">
+							Debes indicar que todas las encuestas han sido contestadas para
+							hacer tu check out en el lobby del hotel. <b class="negrita">*
+								Es un requisito indispensable. </b>
+						</p>
+					</div>
+				</div>
+				<hr>
+				<!--INICIO SECCION ENCUESTA-->
+				<div class="mainPrin" id="listaEncuestas"><img src="img/loading-convencion.gif"></div>
+			</div>
+		</section>
+		</main>
+	</div>
+
+	<!-- RECOMENDACION 1 -->
+	<div id="reco_1" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					id="hdr-rec-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(1,'rec')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title_res mdl-card__title crd-tit-clr">
+							<!-- titulo sobre imagen-->
+							<h2 class="mdl-card__title-text">Antes de Convención</h2>
+						</div>
+
+						<div class="mdl-card__supporting-text"">
+							<p class="tit-tipo-1">El Primer paso</p>
+							<p>
+								Antes de iniciar, lo más importante es <b>Pre-Chequear</b> tu
+								asistencia en el menú <b>MI INFORMACIÓN</b> si todavía no lo has
+								hecho Haz Clic aquí (Link al Pre-Registro)
+							</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Bienvenidos a Quito!</p>
+							<p>
+								Sabemos que has esperado mucho tiempo por nuestra Convención
+								Nacional… ¡Llegó el día! Este será un encuentro único, lleno de
+								novedades y que nos hará sentir orgullosos de la <b>Oportunidad
+									Yanbal.</b> La hermosa capital se prepara para recibirte como parte
+								de nuestras/os mejores Yanbalistas.
+							</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">El Clima</p>
+							<p>Quito, es conocida por su clima cambiante, puede hacer
+								mucho calor en el día y frío en la tarde, por lo que deberás
+								estar preparada/o incluso de una lluvia repentina.</p>
+							<p>
+								Para el día trae contigo siempre <b>Total Block,</b> porque
+								siempre debes protegerte del sol.
+							</p>
+							<p>Para la noche recuerda complementar tu atuendo con un
+								saco, abrigo o chompa ya que en la noche el clima es frío.</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Tips para Viajar</p>
+
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>No
+									olvides ir a la peluquería días antes. Aprovecha el tiempo
+									libre que tienes para hacerte la manicure y pedicure con
+									tiempo.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Olvida
+									doblar tu ropa como lo haces siempre. La mejor forma es
+									enrollándola, así ocuparás menos espacio.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Elige
+									llevar zapatos o sandalias que combinen con diferentes looks.
+									Recuerda que los zapatos ocupan mucho espacio en tu maleta.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Empaca
+									maquillaje, fragancias y bijouterie Yanbal. Con estos
+									accesorios podrás complementar tus looks.</li>
+							</ul>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Prendas que No Puedes Olvidar</p>
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Blusas</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Camiseta
+									Yanbal, te será entregada cuando te registres en el Hotel.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Blazer</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Chompa</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Bufanda/Pañuelo</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Faldas</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Vestidos</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Pantalones</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Zapatos
+									altos y bajos</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Lentes
+									de sol</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Ropa
+									interior clara y oscura</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Cartera
+									de color neutro</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  RECOMENDACION 1 -->
+	<!-- RECOMENDACION 2 -->
+	<div id="reco_2" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					id="hdr-rec-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(2,'rec')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title_res1 mdl-card__title crd-tit-clr">
+							<!-- titulo sobre imagen-->
+							<h2 class="mdl-card__title-text">Hoteles y Estadía</h2>
+						</div>
+
+						<div class="mdl-card__supporting-text">
+							<p class="tit-tipo-1">Registro</p>
+							<p>
+								A tu llegada al hotel, deberás primero registrar tu llegada en
+								el salón reservado para el <b>Registro Yanbal</b> para darte la
+								bienvenida.
+							</p>
+
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Si
+									asistes <b>por primera vez a una Convención,</b> deberás
+									registrarte en tu <b>hotel asignado</b> a las <b>2:00 p.m.</b></li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>El <b>registro
+										general</b> para las personas que ya han asistido iniciará a las <b>3:00
+										p.m.</b> en los hoteles asignados.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i><b>Recuerda</b>
+									que para poder registrarte es obligatorio la presentación de tu
+									<b>cédula de identidad.</b>
+									<p>
+										*Tu <b>asistencia es intransferible.</b> Cualquier
+										incumplimiento <b>será sancionado</b> por el código de ética
+										de Yanbal.
+									</p></li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Al
+									registrarte recibirás una tarjeta o llave para poder ingresar a
+									la habitación, es tu responsabilidad llevarla siempre contigo.
+									En el check out esta tarjeta deberá ser devuelta en recepción.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Recibirás
+									una pulsera que te identificará con el hotel en el que te
+									hospedarás. Recuerda no sacarte en ningún momento de
+									Convención.</li>
+							</ul>
+
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Materiales</p>
+							<p>
+								En el salón de <b>Registro Yanbal</b> te entregaremos todos los
+								materiales como: cartera, camiseta, identificación, libreta y
+								esferográfico. Estos deben ser guardados en tu equipaje, te
+								sugerimos dejar un espacio libre en tu maleta para que puedas
+								colocarlos.
+							</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Habitaciones</p>
+							<p>
+								Después de haber pasado por el <b>Registro Yanbal</b> podrás
+								acercarte al Recepción del Hotel donde te asignarán una <b>habitación
+									doble, muy confortable</b> y ésta <b>¡no puede ser cambiada!</b>
+							</p>
+							<p>
+								<b>Importante:</b> Tu nombre consta en los registros del hotel y
+								si existen daños o faltantes en la habitación, se
+								responsabilizará a la(s) persona(s) que estén registradas en la
+								misma.
+							</p>
+							<p>Te sugerimos que al llegar a la habitación realices un
+								sorteo para ver qué cama te corresponde. Para realizar el sorteo
+								debes esperar a que llegue tu compañera/o.</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Servicios Adicionales del Hotel</p>
+							<p>
+								Los siguientes servicios tienen <b>costo adicional</b> dentro de
+								los hoteles asignados para tu hospedaje:
+							</p>
+							<p>Spa, llamadas telefónicas nacionales e internacionales,
+								lavandería, mini bar, cualquier daño o pérdida de objetos de la
+								habitación.</p>
+							<p>
+								* Si requieres alguno de estos servicios <b>deberás
+									cancelarlos</b> al salir del hotel.
+							</p>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Alimentación</p>
+							<p>
+								<b>Desayunos, almuerzos y cenas:</b> Se servirán en el hotel en
+								el que hayas sido asignada/o, recuerda estar pendiente de los
+								horarios de traslado desde y hacia el hotel que te han
+								designado.
+							</p>
+							<p>
+								* Para ver más información sobre el hotel que te han asignado <b>Haz
+									Clic aquí</b> (Link a sección hoteles)
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  RECOMENDACION 2 -->
+	<!-- RECOMENDACION 3 -->
+	<div id="reco_3" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					id="hdr-rec-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(3,'rec')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title_res2 mdl-card__title crd-tit-clr">
+							<!-- titulo sobre imagen-->
+							<h2 class="mdl-card__title-text">Traslados y Movilización</h2>
+						</div>
+
+						<div class="mdl-card__supporting-text">
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Verifica
+									todos los días en <b>HORARIOS</b> el itinerario de salida de
+									buses desde tu hotel hacia las charlas.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>El
+									lobby del hotel será el punto de encuentro. Te pedimos estar
+									siempre puntual.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Si
+									tuvieras alguna duda, en el hotel siempre habrá una persona del
+									staff que te podrá dar indicaciones.</li>
+							</ul>
+							<hr class="separador2" />
+							<p class="tit-tipo-1">Directoras Embarazadas</p>
+							<p>Durante Convención tendremos varios traslados que pueden
+								tomar varios minutos de viaje y no se recomienda viajar en las
+								siguientes condiciones:</p>
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Embarazo
+									hasta 3 meses (EMBARAZO DE RIESGO).</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Entre
+									7mo a 9no mes de gestación.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Toda
+									Directora embarazada deberá portar un certificado médico que
+									indique que tiene una gestación normal o sin riesgos.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>En caso
+									de tener embarazo de riesgo y deseen viajar, deberán presentar
+									un certificado médico autorizando el viaje y haber adquirido el
+									<b>SEGURO DE ASISTENCIA ESPECIAL DE VIAJES.</b></li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Ninguna
+									Directora podrá viajar con recién nacidos o bebés, ni con otro
+									acompañante.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  RECOMENDACION 3 -->
+	<!-- RECOMENDACION 4 -->
+	<div id="reco_4" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					id="hdr-rec-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(4,'rec')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title_res3 mdl-card__title crd-tit-clr">
+							<!-- titulo sobre imagen-->
+							<h2 class="mdl-card__title-text">Asistencia Médica</h2>
+						</div>
+
+						<div class="mdl-card__supporting-text">
+							<p>Si existiese algún inconveniente médico favor avisar a la
+								persona del staff encargada de tu hotel. Él/ella se comunicará
+								con el doctor y resolverán tu emergencia.</p>
+							<p>
+								<b>Importante:</b>
+							</p>
+							<p>Personas que padezcan alguna enfermedad de riesgo deberán
+								presentar:</p>
+							<ul style="list-style: none;">
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Certificado
+									médico de poder realizar el viaje.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Receta
+									médica y medicamentos necesarios.</li>
+								<li><i class="material-icons ico-rec-1">&#xE145;</i>Seguro
+									adicional para emergencias por enfermedades pre-existentes.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  RECOMENDACION 4 -->
+	<!-- HOTEL 1 -->
+	<div id="hotel_1" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(1,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-cardmdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title10">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+								href="http://www.espanol.marriott.com/hotels/travel/uiodt-jw-marriott-hotel-quito/" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">JW MARRIOT</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Av. Orellana 1172 y Av. Amazonas, Quito<br />Telf.: 02-297-2000
+							</p>
+							<p>Este hotel refinado con centro de conferencias se
+								encuentra en el animado Distrito de Mariscal, a 2 km del Centro
+								de Exposiciones Quito y a 4 km de la Plaza de la Independencia.</p>
+							<p>Las habitaciones son tranquilas e incluyen Wi-Fi gratis,
+								televisiones de pantalla plana, minineveras, teteras y
+								cafeteras.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="btn material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons btn3" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons btn1" style="color: #ec6b00">&#xEB4C;</i><span
+										class="js">Spa</span></td>
+									<td><i class="material-icons btn4" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons btn2" style="color: #ec6b00">&#xEB48;</i>
+									<samp class="js">Piscina</samp></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									Mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 1 -->
+	<!-- HOTEL 2 -->
+	<div id="hotel_2" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(2,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-cardmdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title1">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+								href="https://www.swissotel.es/hotels/quito/travel-tools/fact-sheet/" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">SWISSOTEL QUITO</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Av.12 de Octubre 1820 y Luis Cordero, Quito<br />Telf.: 02 256
+								7600
+							</p>
+							<p>Este hotel de lujo se encuentra a 3 km del Parque La
+								Carolina y a 4 km de la Plaza de la Independencia. </p>
+							<p>Habitaciones elegantes que incluyen vistas a la montaña o
+								a la ciudad, Wi-Fi gratis, televisiones de pantalla plana,
+								minibares y cajas fuertes.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB4C;</i><span
+										class="js">Spa</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB48;</i><span
+										class="js">Piscina</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE566;</i><span
+										class="jus">Canchas Deportivas</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									Mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 2 -->
+	<!-- HOTEL 3 -->
+	<div id="hotel_3" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(3,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title2">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+								href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=766&language=es_ES" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">SHERATON</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Avenida Naciones Unidas y Avenida República de El Salvador,
+								Quito<br />Telf.: 02 297 0002
+							</p>
+							<p>Este hotel moderno con vistas al Volcán Pichincha se
+								encuentra en el distrito urbano Benalcázar, a 2 km del Parque La
+								Carolina y a 7 km de Plaza de la Independencia, la plaza
+								principal de la ciudad.</p>
+							<p>Las habitaciones son tranquilas e incluyen Wi-Fi gratis,
+								televisiones de pantalla plana y mini neveras. Algunas cuentan
+								con vistas al volcán.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB4C;</i><span
+										class="js">Spa</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB48;</i><span
+										class="js">Piscina</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>Se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 3 -->
+	<!-- HOTEL 4 -->
+	<div id="hotel_4" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(4,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title3">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+								href="http://www.hiltonhotels.com/es_XM/ecuador/hilton-colon-quito-hotel/" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">HILTON COLON</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Amazonas N 1914 Y Patria, Quito<br />Telf.: 02 382 8300
+							</p>
+							<p>Este hotel de lujo, ubicado en una torre, se encuentra en
+								el barrio La Mariscal, a 4 minutos a pie del Parque El Ejido y a
+								2 km del casco antiguo de Quito, de estilo colonial español.</p>
+							<p>Habitaciones sencillas y contemporáneas con vistas a la
+								ciudad o a las montañas, televisiones de pantalla plana, canales
+								de suscripción, baños de mármol y escritorios.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB48;</i><span
+										class="js">Piscina</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>Se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 4 -->
+	<!-- HOTEL 5 -->
+	<div id="hotel_5" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(5,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title4">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+									href="http://es.wyndhamhotelgroup.com/hotels/ecuador/quito/wyndham-garden-quito/hotel-overview?partner_id=&hotel_id=11160&campaign_code=&propId=WY11160&checkout_date&brand_id=WY&useWRPoints=false&children=0&corporate_id=&ratePlan=&teens=0&affiliate_id=&iata=&rate_code=&adults=1&checkin_date&rooms=1" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">WYNDHAM GARDEN</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Alemania E5-103 y Av Republica, Quito<br />Telf.: 02 226 5265
+							</p>
+							<p>Este hotel se encuentra ubicado cerca del maravilloso
+								Parque La Carolina, el Museo Guayasamín, el Centro de Exposición
+								Quito y el Parque Metropolinado Guanguiltagua.</p>
+							<p>Cada una de las habitaciones cuenta con Wi-Fi gratis, un
+								televisor de pantalla plana con servicio de cable, cafetera,
+								caja fuerte, secador de cabello y escritorio.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<article>
+								<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+									<tr>
+										<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+											class="js">Gimnasio</span></td>
+										<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+											class="jus">Centro de Negocios</span></td>
+									</tr>
+									<tr>
+										<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+											class="js">Restaurante</span></td>
+									</tr>
+								</table>
+							</article>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 5 -->
+	<!-- HOTEL 6 -->
+	<div id="hotel_6" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(6,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title5">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+									href="https://www.nh-collection.com/es/hotel/nh-collection-quito-royal" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">NH COLLECTION</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Cordero 444 y Avenida 12 de Octubre, Quito<br />Telf.: 02 223
+								3333
+							</p>
+							<p>Este elegante hotel, situado en el distrito financiero, se
+								encuentra a un minuto a pie del World Trade Center y a 4 km de
+								la Iglesia y Monasterio de San Francisco, un complejo católico
+								que data del siglo XVI.</p>
+							<p>Las habitaciones son luminosas y minimalistas, y tienen
+								vistas a la ciudad o a la montaña. Están equipadas con
+								televisores de pantalla plana, Wi-Fi gratis, bases Dock para
+								iPod, mini neveras, cafeteras y teteras.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB4C;</i><span
+										class="js">Spa</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 6 -->
+	<!-- HOTEL 7 -->
+	<div id="hotel_7" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(7,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title7">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a href="http://www.hotelesdann.com/dann-carlton-quito/" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">DANN CARLTON</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Av República de El Salvador N34-377, Quito<br />Telf.: 02 397
+								2600
+							</p>
+							<p>Este lujoso hotel se encuentra a 14 minutos a pie del
+								Parque La Carolina y a 2 km del monumento y museo de arte de la
+								Capilla del Hombre.</p>
+							<p>Las habitaciones son sencillas y disponen de Wi-Fi gratis,
+								televisiones de pantalla plana y mini neveras.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB48;</i><span
+										class="js">Piscina</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 7 -->
+	<!-- HOTEL 8 -->
+	<div id="hotel_8" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(8,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title8">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a href="http://www.hotelquito.com.ec/es/" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">HOTEL QUITO</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Av. González Suárez N27 142, Quito<br />Telf.: 02 396 4900
+							</p>
+							<p>
+								</a>
+							</p>
+							<p>Este moderno hotel cuenta con una fachada de cristal y se
+								encuentra a 4 km de la Plaza de la Independencia y a 5 km de la
+								ornamentada Iglesia de la Compañía de Jesús.</p>
+							<p>Las habitaciones son sencillas y disponen de Wi-Fi gratis,
+								televisiones de pantalla plana y escritorios.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="jus">Restaurante</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB48;</i><span
+										class="js">Piscina</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 8 -->
+	<!-- HOTEL 9 -->
+	<div id="hotel_9" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(9,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title9">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+									href="https://www.ihg.com/holidayinnexpress/hotels/us/es/quito/qitex/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-EC-_-QITEX" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">HOLIDAY INN</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Av. Orellana N6-54 Y Calle Reina Victoria, Quito<br />Telf.: 02
+								299 7300
+							</p>
+							<p>Este hotel moderno está situado en el centro del distrito
+								financiero y se encuentra a 2 km del moderno barrio Mariscal y
+								del parque La Carolina.</p>
+							<p>Las habitaciones son modestas y están equipadas con Wi-Fi
+								gratis, televisores de pantalla plana, escritorios, cafeteras y
+								teteras.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="js">Restaurantez</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 9 -->
+	<!-- HOTEL 10 -->
+	<div id="hotel_10" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(10,'hot')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div class="mdl-card__title6">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">public</i><a
+									href="https://www.accorhotels.com/es/hotel-5111-mercure-alameda-quito/index.shtml" target="_blank"><span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span></a>
+						</button>
+
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">MERCURE</h1>
+							<p class="texto-fecha" style="line-height: 16px;">
+								Vicente Ramón Roca E4-122 Y Av. Amazonas, Quito<br />Telf.: 02
+								299 4000
+							</p>
+							<p>Este hotel sencillo, situado en el barrio turístico de
+								Mariscal, se encuentra a 9 minutos a pie de los restaurantes y
+								bares de la plaza Foch, y a 2 km de la imponente basílica del
+								Voto Nacional.</p>
+							<p>Las habitaciones son sencillas y cuentan con Wi-Fi,
+								televisión de pantalla plana, minibar y caja fuerte.</p>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Instalaciones</h1>
+
+							<table style="margin-left: 1%; margin-top: 2%; width: 93%">
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB43;</i><span
+										class="js">Gimnasio</span></td>
+									<td><i class="material-icons" style="color: #ec6b00">&#xEB3F;</i><span
+										class="jus">Centro de Negocios</span></td>
+								</tr>
+								<tr>
+									<td><i class="material-icons" style="color: #ec6b00">&#xE56C;</i><span
+										class="js">Restaurante</span></td>
+								</tr>
+							</table>
+							<hr class="separador2" />
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;">Políticas</h1>
+							<ul style="list-style: none;">
+								<li><i class="material-icons">&#xE145;</i>No se admiten
+									mascotas.</li>
+								<li><i class="material-icons">&#xE145;</i>Prohibido fumar
+									en las instalaciones</li>
+								<li><i class="material-icons">&#xE145;</i>Las toallas,
+									batas, edredones, mobiliario y artículos de habitación o inicio
+									y salida del mismo. Cualquier daño o faltante será
+									responsabilidad del huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Todo consumo
+									adicional a la alimentación establecida en los salones
+									asignados para el evento o consumos de teléfono, servicio a la
+									habitación o consumos especiales será asumido por el huésped.</li>
+								<li><i class="material-icons">&#xE145;</i>Está prohibido
+									el ingreso a personas externas que no estén registradas en el
+									hotel ni en las habitaciones.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	<!-- FIN  HOTEL 10 -->
+	<!-- PANEL LOGIN USUARIO CLAVE -->
+	<div id="panel-usu-clave" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					id="hdr-rec-1" style="background-color: #ec6b00; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(null,'log')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title">INICIAR SESIÓN</span>
+						</div>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+
+					<div
+						class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+
+						<div class="mdl-card__supporting-text" style="margin-top: 36px">
+
+							<div>
+								<form class="w3-container"
+									style="margin-top: 30px; margin-bottom: 30px; font-size: 1.2em">
+									<input class="w3-input" type="text" placeholder="Código"
+										id="codigo-usuario" required="required"> <input
+										class="w3-input" type="password" placeholder="Contraseña"
+										style="margin-bottom: 30px;" id="contrasenia-usuario">
+									<input required="required" id="btn-login-reg"
+										class="w3-btn boton-enviar" type="submit"
+										value="INICIAR SESIÓN" onclick="login()">
+									<div id="loading-login" style="display: none;">
+										<img src="img/loading-convencion.gif">
+									</div>
+								</form>
+							</div>
+							<p style="color: #757575; font-size: 0.9em">J0rg3@A5sa
+								2625366 Lorem ipsum dolor sit amet, consectetuer adipiscing
+								elit, sed diam nonummy nibh euismod tincidunt ut v</p>
+
+						</div>
+
+					</div>
+				</div>
+				</main>
+
+			</div>
+		</div>
+	</div>
+	<!-- FIN LOGIN -->
+	<!-- cobert -->
+	<div id="contenedorCobertura" class="articulo" style="display: none;">
+		<!-- Simple header with fixed tabs. -->
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow txt-clr-1 cnt-pos-fx"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(1,'cobert')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content">
+				<div class="page-content">
+					<div
+						class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article">
+						<div id="imagenPrincipalCobertura" class="mdl-card__title">
+							<!-- titulo sobre imagen-->
+							<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+						</div>
+						<!-- Colored FAB button with ripple -->
+						<button
+							class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+							data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons">share</i> <span
+								class="mdl-button__ripple-container"><span
+								class="mdl-ripple"></span></span>
+						</button>
+						<div class="mdl-card__supporting-text">
+							<h1 class="mdl-card__title-text"
+								style="font-size: 20px; color: black;" id="tituloCobertura"></h1>
+							<p class="texto-fecha" id="fechaCobertura"></p>
+							<p id="textoCobertura"></p>
+						</div>
+						<!-- Imagenes -->
+						<div class="mdl-grid" id="imagenesCobertura"></div>
+						<!-- Seccion Articulo Siguiente-->
+						<div class="mdl-card__actions mdl-card--border"
+							id="btn-sig-art-cob">
+							<span class="mdl-card__supporting-text"
+								style="font-size: 20px; color: #ec6b00; display: block;">Siguiente</span>
+
+							<div class="mdl-card mdl-shadow--2dp mdl-card--horizontal"
+								style="min-height: 100px; height: 100px;">
+								<div class="mdl-card__media_left">
+									<img id="imgArtSigCob" alt="img" width="150px" height="100px">
+								</div>
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text"
+										style="font-size: 12px; color: #000; margin-top: 17px; align-self: auto;"
+										id="txtArtSigCob"></h2>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<span class="mdl-card__supporting-text"
+										style="font-size: 12px;" id="fecArtSigCob"></span>
+								</div>
+							</div>
+						</div>
+						<!-- Seccion Articulo Anterior-->
+						<div class="mdl-card__actions mdl-card--border"
+							id="btn-ant-art-cob">
+							<span class="mdl-card__supporting-text"
+								style="font-size: 20px; color: #ec6b00; display: block;">Anterior</span>
+
+							<!-- Imagenes -->
+							<div class="mdl-card mdl-shadow--2dp mdl-card--horizontal"
+								style="min-height: 100px; height: 100px;">
+								<div class="mdl-card__media_left">
+									<img id="imgArtAntCob" alt="img" width="150px" height="100px">
+								</div>
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text"
+										style="font-size: 12px; color: #000; margin-top: 17px; align-self: auto;"
+										id="txtArtAntCob"></h2>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<span class="mdl-card__supporting-text"
+										style="font-size: 12px;" id="fecArtAntCob"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</main>
+			</div>
+		</div>
+	</div>
+	<!-- FIN  cober -->
+	<!-- INICIO IMAGEN FULL SCREEN -->
+	<div id="cnt-img-full" style="display: none;">
+		<header class="is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+			style="background-color: transparent; box-shadow: none;">
+			<div class="mdl-layout__header-row" onclick="regresarFullImg()"
+				style="padding-left: 16px !important;">
+				<div class="demo-back">
+					<a
+						class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+						title="go back" role="button"
+						data-upgraded=",MaterialButton,MaterialRipple"> <i
+						class="material-icons" role="presentation">arrow_back</i> <span
+						class="mdl-button__ripple-container"><span
+							class="mdl-ripple is-animating"
+							style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+				</div>
+				<div class="mdl-layout-spacer">
+					<span class="mdl-layout-title"></span>
+				</div>
+				<!-- Right aligned menu below button -->
+
+			</div>
+		</header>
+		<div>
+			<i id="btn-last-img-gal" class="material-icons flecha_ant_gal flecha_gal">keyboard_arrow_left</i>
+			<i id="btn-next-img-gal" class="material-icons flecha_sig_gal flecha_gal">keyboard_arrow_right</i>
+			<img src="">
+		</div>
+	</div>
+	<!-- FIN IMAGEN FULL SCREEN -->
+	<!--***************************************************************INICIO CONTENIDO EN VIVO**********************************************************************-->
+	<div id="contenedorEnVivo">
+		<!-- INICIO ENVIVO 1 -->
+		<div id="en_vivo_1" style="display: none;">
+			<div class="mdl-layout__container">
+				<div
+					class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+					data-upgraded=",MaterialLayout">
+					<header
+						class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+						style="background-color: transparent; box-shadow: none;">
+						<div class="mdl-layout__header-row"
+							style="padding-left: 16px !important;">
+							<div class="demo-back">
+								<a
+									class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+									onclick="regresarHome(1,'vivo')" title="go back" role="button"
+									data-upgraded=",MaterialButton,MaterialRipple"> <i
+									class="material-icons" role="presentation">arrow_back</i> <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple is-animating"
+										style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+							</div>
+							<div class="mdl-layout-spacer">
+								<span class="mdl-layout-title"></span>
+							</div>
+							<!-- Right aligned menu below button -->
+							<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">&#xE5D4;</i>
+							</button>
+
+							<ulFIN
+								class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+								for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+							</ul>
+						</div>
+					</header>
+					<main class="mdl-layout__content cnt-pos-abs">
+					<div class="page-content">
+						<div
+							class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+							<div class="mdl-card__title_envivo">
+								<!-- titulo sobre imagen-->
+								<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+							</div>
+							<!-- Colored FAB button with ripple -->
+							<button
+								class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+								data-upgraded=",MaterialButton,MaterialRipple"
+								onclick="abrirVideoDeEnVivo(1)">
+								<i class="material-icons">play_arrow</i> <span
+									class="mdl-button__ripple-container"><span
+									class="mdl-ripple"></span></span>
+							</button>
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Apertura “Somos
+									Smart Somos Yanbal”</h1>
+								<p class="texto-fecha">Viernes 6 de Abril - Hora: 20:30 pm</p>
+								<p>Vivir la Convención Nacional es vivir una experiencia muy
+									enriquecedora. Tú elegiste ser parte de nuestros ganadores y
+									ahora podrás compartir con las mejores Directoras y Directores
+									del país; y vivir momentos y celebraciones inolvidables.</p>
+								<p>La Noche de Apertura estará cargada de innovación y
+									digitalización. Aquí conocerás todas las ventajas y beneficios
+									que la compañía te ofrece, para seguir creciendo mucho más.
+									Ahora es el momento de subirte a la ola digital, para demostrar
+									lo imparable y exitosa/o que eres. ¡Somos Smart Somos Yanbal!</p>
+							</div>
+							<hr class="separador" />
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">
+									Ser <b> “SMART” </b> es…
+								</h1>
+								<p>
+									Aprovechar lo que el mundo de hoy nos trae: innovaciones,
+									nuevas tecnologías, un entorno digital para hacer <b>todo
+										más rápido y eficiente y disfrutar de nuestro tiempo libre.</b>
+								</p>
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">
+									Ser <b> “SMART” </b> es…
+								</h1>
+								<p>
+									<b>Saber inspirar y Desarrollar tu Red</b>; Siendo una
+									Directora y Director que cumple su rol motivador.
+								</p>
+								<p>
+									Porque ser <b>“SMART”</b> es ser <b>Digital</b> para cumplir
+									nuestro Rol. <b>Y en Yanbal somos “Smart” en todo</b>.
+								</p>
+							</div>
+							<hr class="separador" />
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Guía de Looks</h1>
+								<p>Mira la guía de looks que hemos preparado especialmente
+									para ti. Aquí podrás encontrar colores, estilos de vestimenta y
+									recomendaciones para que vivas y luzcas increíble en la
+									Convención.</p>
+							</div>
+
+							<div style="text-align: center;">
+								<a
+									class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+									style="color: white; background: #ec6b00;"> VER LOOKS </a>
+							</div>
+							<br />
+
+
+						</div>
+
+					</div>
+				</div>
+
+				</main>
+				<!--FIN MAIN EN VIVO 1 -->
+			</div>
+		</div>
+		<!-- FIN ENVIVO 1 -->
+		<!-- INICIO ENVIVO 2 -->
+		<div id="en_vivo_2" style="display: none;">
+			<div class="mdl-layout__container">
+				<div
+					class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+					data-upgraded=",MaterialLayout">
+					<header
+						class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+						style="background-color: transparent; box-shadow: none;">
+						<div class="mdl-layout__header-row"
+							style="padding-left: 16px !important;">
+							<div class="demo-back">
+								<a
+									class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+									onclick="regresarHome(2,'vivo')" title="go back" role="button"
+									data-upgraded=",MaterialButton,MaterialRipple"> <i
+									class="material-icons" role="presentation">arrow_back</i> <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple is-animating"
+										style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+							</div>
+							<div class="mdl-layout-spacer">
+								<span class="mdl-layout-title"></span>
+							</div>
+							<!-- Right aligned menu below button -->
+							<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">&#xE5D4;</i>
+							</button>
+
+							<ul
+								class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+								for="demo-menu-lower-right">
+								<li class="mdl-menu__item">Horarios</li>
+								<li class="mdl-menu__item">Lectores Digitales</li>
+								<li class="mdl-menu__item">Mis Encuestas</li>
+								<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+							</ul>
+						</div>
+					</header>
+					<main class="mdl-layout__content cnt-pos-abs">
+					<div class="page-content">
+						<div
+							class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+							<div class="mdl-card__title_envivo_1">
+								<!-- titulo sobre imagen-->
+								<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+							</div>
+							<!-- Colored FAB button with ripple -->
+							<button
+								class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+								data-upgraded=",MaterialButton,MaterialRipple"
+								onclick="abrirVideoDeEnVivo(2)">
+								<i class="material-icons">play_arrow</i> <span
+									class="mdl-button__ripple-container"><span
+									class="mdl-ripple"></span></span>
+							</button>
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Noche de Gala</h1>
+								<p class="texto-fecha">Sábado 7 de Abril – Hora: 19:30 pm</p>
+								<p>Te esperamos para vivir una Noche de Reconocimiento llena
+									de mística, emoción y aplausos con nuestras mejores Directoras
+									y Directores a nivel nacional.</p>
+								<p>¡Tú puedes ser uno de los protagonistas de este momento
+									inolvidable! Cerraremos nuestra Noche de Gala con broche de
+									oro, coronando a la Reina Nacional de Ventas 2018, un evento
+									que no te lo puedes perder.</p>
+							</div>
+							<hr class="separador" />
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Guía de Looks</h1>
+								<p>Mira la guía de looks que hemos preparado especialmente
+									para ti. Aquí podrás encontrar colores, estilos de vestimenta y
+									recomendaciones para que vivas y luzcas increíble en la
+									Convención.</p>
+							</div>
+
+							<div style="text-align: center;">
+								<a
+									class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+									style="color: white; background: #ec6b00;"> VER LOOKS </a>
+							</div>
+							<br />
+
+
+						</div>
+
+					</div>
+				</div>
+
+				</main>
+				<!--FIN MAIN EN VIVO 2 -->
+			</div>
+		</div>
+
+		<!-- FIN ENVIVO 2 -->
+		<!-- INICIO ENVIVO 3 -->
+
+		<div id="en_vivo_3" style="display: none;">
+			<div class="mdl-layout__container">
+				<div
+					class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+					data-upgraded=",MaterialLayout">
+					<header
+						class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+						style="background-color: transparent; box-shadow: none;">
+						<div class="mdl-layout__header-row"
+							style="padding-left: 16px !important;">
+							<div class="demo-back">
+								<a
+									class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+									onclick="regresarHome(3,'vivo')" title="go back" role="button"
+									data-upgraded=",MaterialButton,MaterialRipple"> <i
+									class="material-icons" role="presentation">arrow_back</i> <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple is-animating"
+										style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+							</div>
+							<div class="mdl-layout-spacer">
+								<span class="mdl-layout-title"></span>
+							</div>
+							<!-- Right aligned menu below button -->
+							<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">&#xE5D4;</i>
+							</button>
+
+							<ul
+								class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+								for="demo-menu-lower-right">
+								<li class="mdl-menu__item">Horarios</li>
+								<li class="mdl-menu__item">Lectores Digitales</li>
+								<li class="mdl-menu__item">Mis Encuestas</li>
+								<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+							</ul>
+						</div>
+					</header>
+					<main class="mdl-layout__content cnt-pos-abs">
+					<div class="page-content">
+						<div
+							class="mdl-card mdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+							<div class="mdl-card__title_envivo_2">
+								<!-- titulo sobre imagen-->
+								<!--h2 class="mdl-card__title-text">Título articulo</h2-->
+							</div>
+							<!-- Colored FAB button with ripple -->
+							<button
+								class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--position"
+								data-upgraded=",MaterialButton,MaterialRipple"
+								onclick="abrirVideoDeEnVivo(3)">
+								<i class="material-icons">play_arrow</i> <span
+									class="mdl-button__ripple-container"><span
+									class="mdl-ripple"></span></span>
+							</button>
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Entrega de Autos</h1>
+								<p class="texto-fecha">Domingo 8 de Abril – Hora: 19:30 pm</p>
+								<p>Este año muchas Directoras y Directores eligieron crecer
+									y en la “Entrega de Autos” recibirán su auto Yanbal 0 km.
+									¡Nuestro mayor símbolo de reconocimiento!.</p>
+								<p>La entrega de las llaves del auto Yanbal es uno de los
+									momentos más emotivos y esperados por todos nuestros ganadores.
+									Ellos se lo propusieron, eligieron crecer y hacer su sueño
+									realidad. ¡Tú puedes ser el próximoganador!</p>
+							</div>
+							<hr class="separador" />
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black;">Guía de Looks</h1>
+								<p>Mira la guía de looks que hemos preparado especialmente
+									para ti. Aquí podrás encontrar colores, estilos de vestimenta y
+									recomendaciones para que vivas y luzcas increíble en la
+									Convención.</p>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									seddiam nonummy nibh euismod tincidunt ut v Lorem ipsum
+									dolorsit amet, consectetuer adipiscing elit, sed diam nonummy
+									nibheuismod tincidunt ut v.</p>
+							</div>
+
+							<div style="text-align: center;">
+								<a
+									class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+									style="color: white; background: #ec6b00;"> VER LOOKS </a>
+							</div>
+							<br />
+
+
+						</div>
+
+					</div>
+				</div>
+
+				</main>
+				<!--FIN MAIN EN VIVO 3 -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FIN ENVIVO 3 -->
+	<!--***************************************************************FIN CONTENIDO EN VIVO**********************************************************************-->
+	<!--***************************************************************INICIO CONTENIDO VIDEO DE SECCION EN VIVO**********************************************************************-->
+	<!-- INICIO VIDEO 1 -->
+	<div id='video_en_vivo_1' style="display: none;">
+
+		<div
+			class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+			data-upgraded=",MaterialLayout">
+			<header
+				class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1 hdr-bck-nar"
+				style="box-shadow: none;">
+				<div class="mdl-layout__header-row"
+					style="padding-left: 16px !important;">
+					<div class="demo-back">
+						<a
+							class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+							onclick="regresarHomeEnVivo(1,'video')" title="go back"
+							role="button" data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons" role="presentation">arrow_back</i> <span
+							class="mdl-button__ripple-container"><span
+								class="mdl-ripple is-animating"
+								style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span>
+						</a>
+					</div>
+					<div class="mdl-layout-spacer">
+						<span class="mdl-layout-title"></span>
+					</div>
+					<!-- Right aligned menu below button -->
+					<button id="demo-menu-lower-right"
+						class="mdl-button mdl-js-button mdl-button--icon">
+						<i class="material-icons">&#xE5D4;</i>
+					</button>
+
+					<ul
+						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						for="demo-menu-lower-right">
+						<li class="mdl-menu__item">Horarios</li>
+						<li class="mdl-menu__item">Lectores Digitales</li>
+						<li class="mdl-menu__item">Mis Encuestas</li>
+						<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+					</ul>
+				</div>
+			</header>
+			<iframe width="100%" height="300" id="evt-vivo-1"
+				style="margin-top: 55px;"
+				src="https://www.youtube.com/embed/UCeYHYjUPyY" frameborder="0"
+				allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			<div class="mdl-card__supporting-text cnt-rec-video"
+				style="margin-top: 16px;">
+				<h1 class="mdl-card__title-text"
+					style="font-size: 20px; color: #ec6b00;">Recomendaciones</h1>
+				<p>Para que disfrutes del evento en vivo sin ningún
+					inconveniente te indicamos algunas sugerencias:</p>
+				<ul>
+					<li>Mantén una <b>buena conexión a internet</b>, de
+						preferencia una conexión <b>Wifi</b> <i class="material-icons">&#xE63E;</i>
+						para evitar que la reproducción en vivo consuma tus datos móviles.
+					</li>
+					<li>Para ver el video en <b>Pantalla Completa</b> debes
+						presionar el botón <i class="material-icons">&#xE5D0;</i> que
+						aparece en la parte inferior derecha del menú. Para salir de <b>Pantalla
+							Completa</b> presión el botón <i class="material-icons">&#xE5D1;</i>
+						que aparece en el mismo lugar.
+					</li>
+					<li>Si necesita aumentar o disminuir el volumen <i
+						class="material-icons">&#xE050;</i> del video usa los botones
+						propios del celular. Estos se encuentran a un lado del móvil.
+					</li>
+					<li>Para tener una mejor experiencia puedes usar audífonos <i
+						class="material-icons">&#xE310;</i> para escuchar de mejor manera
+						el evento en vivo.
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- FIN VIDEO 1 -->
+	<!-- INICIO VIDEO 2 -->
+	<div id='video_en_vivo_2' style="display: none;">
+
+		<div
+			class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+			data-upgraded=",MaterialLayout">
+			<header
+				class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1 hdr-bck-nar"
+				style="background-color: transparent; box-shadow: none;">
+				<div class="mdl-layout__header-row"
+					style="padding-left: 16px !important;">
+					<div class="demo-back">
+						<a
+							class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+							onclick="regresarHomeEnVivo(2,'video')" title="go back"
+							role="button" data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons" role="presentation">arrow_back</i> <span
+							class="mdl-button__ripple-container"><span
+								class="mdl-ripple is-animating"
+								style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span>
+						</a>
+					</div>
+					<div class="mdl-layout-spacer">
+						<span class="mdl-layout-title"></span>
+					</div>
+					<!-- Right aligned menu below button -->
+					<button id="demo-menu-lower-right"
+						class="mdl-button mdl-js-button mdl-button--icon">
+						<i class="material-icons">&#xE5D4;</i>
+					</button>
+
+					<ul
+						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						for="demo-menu-lower-right">
+						<li class="mdl-menu__item">Horarios</li>
+						<li class="mdl-menu__item">Lectores Digitales</li>
+						<li class="mdl-menu__item">Mis Encuestas</li>
+						<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+					</ul>
+				</div>
+			</header>
+			<iframe width="100%" height="300" id="evt-vivo-2"
+				style="margin-top: 55px;"
+				src="https://www.youtube.com/embed/UCeYHYjUPyY" frameborder="0"
+				allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			<div class="mdl-card__supporting-text cnt-rec-video"
+				style="margin-top: 16px;">
+				<h1 class="mdl-card__title-text"
+					style="font-size: 20px; color: #ec6b00;">Recomendaciones</h1>
+				<p>Para que disfrutes del evento en vivo sin ningún
+					inconveniente te indicamos algunas sugerencias:</p>
+				<ul>
+					<li>Mantén una <b>buena conexión a internet</b>, de
+						preferencia una conexión <b>Wifi</b> <i class="material-icons">&#xE63E;</i>
+						para evitar que la reproducción en vivo consuma tus datos móviles.
+					</li>
+					<li>Para ver el video en <b>Pantalla Completa</b> debes
+						presionar el botón <i class="material-icons">&#xE5D0;</i> que
+						aparece en la parte inferior derecha del menú. Para salir de <b>Pantalla
+							Completa</b> presión el botón <i class="material-icons">&#xE5D1;</i>
+						que aparece en el mismo lugar.
+					</li>
+					<li>Si necesita aumentar o disminuir el volumen <i
+						class="material-icons">&#xE050;</i> del video usa los botones
+						propios del celular. Estos se encuentran a un lado del móvil.
+					</li>
+					<li>Para tener una mejor experiencia puedes usar audífonos <i
+						class="material-icons">&#xE310;</i> para escuchar de mejor manera
+						el evento en vivo.
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- FIN VIDEO 2 -->
+	<!-- INICIO VIDEO 3 -->
+	<div id='video_en_vivo_3' style="display: none;">
+
+		<div
+			class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+			data-upgraded=",MaterialLayout">
+			<header
+				class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1 hdr-bck-nar"
+				style="background-color: transparent; box-shadow: none;">
+				<div class="mdl-layout__header-row"
+					style="padding-left: 16px !important;">
+					<div class="demo-back">
+						<a
+							class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+							onclick="regresarHomeEnVivo(3,'video')" title="go back"
+							role="button" data-upgraded=",MaterialButton,MaterialRipple">
+							<i class="material-icons" role="presentation">arrow_back</i> <span
+							class="mdl-button__ripple-container"><span
+								class="mdl-ripple is-animating"
+								style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span>
+						</a>
+					</div>
+					<div class="mdl-layout-spacer">
+						<span class="mdl-layout-title"></span>
+					</div>
+					<!-- Right aligned menu below button -->
+					<button id="demo-menu-lower-right"
+						class="mdl-button mdl-js-button mdl-button--icon">
+						<i class="material-icons">&#xE5D4;</i>
+					</button>
+					<ul
+						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						for="demo-menu-lower-right">
+						<li class="mdl-menu__item">Horarios</li>
+						<li class="mdl-menu__item">Lectores Digitales</li>
+						<li class="mdl-menu__item">Mis Encuestas</li>
+						<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+					</ul>
+				</div>
+			</header>
+			<iframe width="100%" height="300" id="evt-vivo-3"
+				style="margin-top: 55px;"
+				src="https://www.youtube.com/embed/UCeYHYjUPyY" frameborder="0"
+				allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			<div class="mdl-card__supporting-text cnt-rec-video"
+				style="margin-top: 16px;">
+				<h1 class="mdl-card__title-text"
+					style="font-size: 20px; color: #ec6b00;">Recomendaciones</h1>
+				<p>Para que disfrutes del evento en vivo sin ningún
+					inconveniente te indicamos algunas sugerencias:</p>
+				<ul>
+					<li>Mantén una <b>buena conexión a internet</b>, de
+						preferencia una conexión <b>Wifi</b> <i class="material-icons">&#xE63E;</i>
+						para evitar que la reproducción en vivo consuma tus datos móviles.
+					</li>
+					<li>Para ver el video en <b>Pantalla Completa</b> debes
+						presionar el botón <i class="material-icons">&#xE5D0;</i> que
+						aparece en la parte inferior derecha del menú. Para salir de <b>Pantalla
+							Completa</b> presión el botón <i class="material-icons">&#xE5D1;</i>
+						que aparece en el mismo lugar.
+					</li>
+					<li>Si necesita aumentar o disminuir el volumen <i
+						class="material-icons">&#xE050;</i> del video usa los botones
+						propios del celular. Estos se encuentran a un lado del móvil.
+					</li>
+					<li>Para tener una mejor experiencia puedes usar audífonos <i
+						class="material-icons">&#xE310;</i> para escuchar de mejor manera
+						el evento en vivo.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- FIN VIDEO 3 -->
+	<!--***************************************************************FIN CONTENIDO VIDEO DE SECCION EN VIVO**********************************************************************-->
+
+	<!-- LOOK 1 -->
+	<div id="look_1" style="display: none;">
+		<div class="mdl-layout__container">
+			<div
+				class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+				data-upgraded=",MaterialLayout">
+				<header
+					class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+					style="background-color: transparent; box-shadow: none;">
+					<div class="mdl-layout__header-row"
+						style="padding-left: 16px !important;">
+						<div class="demo-back">
+							<a
+								class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+								onclick="regresarHome(1,'look')" title="go back" role="button"
+								data-upgraded=",MaterialButton,MaterialRipple"> <i
+								class="material-icons" role="presentation">arrow_back</i> <span
+								class="mdl-button__ripple-container"><span
+									class="mdl-ripple is-animating"
+									style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span></a>
+						</div>
+						<div class="mdl-layout-spacer">
+							<span class="mdl-layout-title"></span>
+						</div>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+							class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">&#xE5D4;</i>
+						</button>
+
+						<ul
+							class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							for="demo-menu-lower-right">
+							<li class="mdl-menu__item">Horarios</li>
+							<li class="mdl-menu__item">Lectores Digitales</li>
+							<li class="mdl-menu__item">Mis Encuestas</li>
+							<li class="mdl-menu__item">Iniciar Sesi&oacute;n</li>
+						</ul>
+					</div>
+				</header>
+				<main class="mdl-layout__content cnt-pos-abs">
+				<div class="page-content">
+					<div
+						class="mdl-cardmdl-cell--12-col mdl-cell--12-col-desktop mdl-card--article cnt-w-100">
+						<div class="mdl-card__title hdr-look-1 card-look crd-tit-clr">
+							<!-- titulo sobre imagen-->
+							<h2 class="mdl-card__title-text " id="txt-look-p-0"></h2>
+						</div>
+
+						<div>
+							<div class="mdl-card__supporting-text">
+								<p id="txt-look-p-1"></p>
+							</div>
+
+							<div style="text-align: center;">
+								<a onclick="mostrarLook(0)" id="btn-look-muj"
+									class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+									style="color: white; background: #ec6b00; margin-right: 40px;"
+									data-upgraded=",MaterialButton,MaterialRipple"> MUJER <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple"></span></span></a> <a onclick="mostrarLook(1)"
+									id="btn-look-hom"
+									class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+									style="color: white; background: #ec6b00;"
+									data-upgraded=",MaterialButton,MaterialRipple"> HOMBRE <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple"></span></span></a>
+							</div>
+
+							<hr class="separador2" />
+
+
+							<div class="mdl-card__supporting-text">
+								<h1 class="mdl-card__title-text"
+									style="font-size: 20px; color: black; text-align: center;"
+									id="txt-look-p-2"></h1>
+								<p id="txt-look-p-3"></p>
+							</div>
+							<img id="img-look-p-1" width="100%">
+						</div>
+
+					</div>
+				</div>
+				</main>
+			</div>
+		</div>
+		</div>
+		<!-- FIN  LOOK 1 -->
+		<!-- INICIO ENCUESTAS -->
+		<div id="contenedorEncuesta" style="display: none;">
+			<div class="mdl-layout__container">
+				<div
+					class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs is-upgraded"
+					data-upgraded=",MaterialLayout">
+					<header
+						class="mdl-layout__header is-casting-shadow cnt-pos-fx cnt-scr-ev txt-clr-1"
+						id="hdr-rec-1"
+						style="background-color: #ec6b00; box-shadow: none;">
+						<div class="mdl-layout__header-row"
+							style="padding-left: 16px !important;">
+							<div class="demo-back">
+								<a
+									class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+									onclick="regresarHome(null,'encuesta')" title="go back"
+									role="button" data-upgraded=",MaterialButton,MaterialRipple">
+									<i class="material-icons" role="presentation">arrow_back</i> <span
+									class="mdl-button__ripple-container"><span
+										class="mdl-ripple is-animating"
+										style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(19px, 13px);"></span></span>
+								</a>
+							</div>
+							<div class="mdl-layout-spacer" onclick="regresarHome(null,'encuesta')">
+								<span class="mdl-layout-title"><span id="nombreEncuesta"></span></span>
+							</div>
+						</div>
+					</header>
+					<main class="mdl-layout__content cnt-pos-abs"
+						style="margin-top:55px;">
+					<div class="page-content">
+						<p class="txt-tipo-1">Selecciona en cada concepto la
+							calificación que consideres adecuada.</p>
+						<div style="text-align: center;width: 100%;">
+							<button class="btn-encuesta" type="button" value="enviar"
+								onclick="formaDeCalificar()">VER FORMA DE CALIFICAR</button>
+						</div>
+						<article class="atc-encuesta">La encuesta es totalmente
+							anónima. Una vez enviado la encuesta se marcará como realizado y
+							no se podrá volver hacer la encuesta.</article>
+
+						<div id="contenedorPreguntas"></div>
+
+
+						<!--FIN CONTENIDO ENCUESTA-->
+						<center>
+							<button class="btn-encuesta2" type="button" value="enviar"
+								onclick="enviarRes();">Enviar</button>
+						</center>
+
+
+					</div>
+					<!--Contenido ventana de ayuda-->
+					<div id="ventanaAyuda" style="display: none;">
+						<div class="divInternoVentanaEmergente">
+							<p class="tit-tipo-1 txt-bold">Cuadro de Calificación</p>
+							<p class="txt-lne-hg">Selecciona la carita que consideres adecuada en cada una
+								de los puntos de la encuesta</p>
+							<table class="estiloTablaAyuda">
+								<tr class="trEstilo">
+									<td><img class='estiloCarita2' src="img/1.png"></td>
+									<td class="tdEstilo">5</td>
+									<td>Totalmente Satisfecho</td>
+								</tr>
+								<tr class="trEstilo">
+									<td><img class='estiloCarita2' src="img/2.png"></td>
+									<td class="tdEstilo">4</td>
+									<td>Muy Satisfecho</td>
+								</tr>
+								<tr class="trEstilo">
+									<td><img class='estiloCarita2' src="img/3.png"></td>
+									<td class="tdEstilo">3</td>
+									<td>Satisfecho</td>
+								</tr>
+								<tr class="trEstilo">
+									<td><img class='estiloCarita2' src="img/4.png"></td>
+									<td class="tdEstilo">2</td>
+									<td>Poco Satisfecho</td>
+								</tr>
+								<tr class="trEstilo">
+									<td><img class='estiloCarita2' src="img/5.png"></td>
+									<td class="tdEstilo">1</td>
+									<td>Nada Satisfecho</td>
+								</tr>
+							</table>
+							<div style="text-align: center;width: 100%;">
+								<button class="btn-window-help" onclick="regresarEncuesta()">Cerrar</button>
+							</div>
+						</div>
+
+						<!--Contenido ventana de ayuda-->
+					</div>
+					</main>
+
+				</div>
+			</div>
+		</div>
+		<!-- FIN ENCUESTAS -->
+		<script>
+			
+		</script>
+</body>
+<script type="text/javascript" src="cordova.js"></script>
+</html>

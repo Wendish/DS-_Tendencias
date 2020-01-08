@@ -1,0 +1,4 @@
+#Wed Mar 07 11:37:12 ECT 2018
+base.0=/home/savia2/Developers/cordova/lector-ar/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/home/savia2/Developers/cordova/lector-ar/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

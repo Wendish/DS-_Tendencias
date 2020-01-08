@@ -1,0 +1,1135 @@
+.demo-card-wide>.mdl-card__title {
+	color: #fff;
+	height: 176px;
+	background: url('../img/welcome_card.jpg') center/cover;
+}
+
+.demo-card-wide {
+	margin: 8px;
+	width: 97%;
+}
+
+
+.second-menu {
+	background-color: #f5f4f4;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+	color: #000;
+}
+
+.menu_title_text {
+	font-size: 6pt;
+	margin-top: -35px;
+}
+
+.mdl-layout__header {
+	background-color: #fff;
+	color: #ec6b00;
+}
+
+.mdl-layout__tab-bar {
+	background-color: #fff;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+	color: #ec6b00;
+}
+
+.mdl-layout__tab {
+	color: #868589;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+	background: #ec6b00;
+}
+
+.separador {
+	color: #ec6b00;
+	width: 95%;
+	margin: auto;
+	background: #ec6b00;
+	border: 0;
+}
+
+/*HORIZONTAL CARDS*/
+.mdl-card--horizontal {
+	flex-direction: column;
+	height: 1vh; /* 1 */
+	padding-left: 150px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.mdl-card__media_left {
+	left: 0;
+	position: absolute;
+	width: 150px;
+}
+
+.mdl-card--horizontal_right {
+	padding-right: 150px;
+	padding-left: 0px;
+}
+
+.mdl-card__media_right {
+	right: 0;
+	position: absolute;
+	width: 150px;
+}
+
+.mdl-card__supporting-text {
+	flex: 1 1 auto;
+	width: auto;
+}
+
+.mdl-navigation {
+	width: 100%;
+}
+
+.mdl-navigation_style {
+	width: 100%;
+	color: #868589 !important;
+}
+
+.mdl-submenu {
+	font-size: 14px !important;
+	text-transform: none;
+}
+
+.tit-tipo-1{
+	font-size: 1.3em;
+	margin: 0 0 5px;
+}
+
+
+
+.ico-rec-1{
+	font-size: 0.8em;
+	color: #000;
+	margin-right: 5px;
+}
+.mdl-submenu.active {
+	color: #ec6b00 !important;
+}
+
+.btn-flt-r{
+	float: right;
+}
+
+.demo-card-image.mdl-card {
+	min-height: 150px;
+	width: 160px;
+	height: 160px;
+	background: url('../img/album.jpg') center/cover !important;
+}
+
+.demo-card-image>.mdl-card__actions {
+	height: 52px;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.demo-card-image__filename {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.title-gallery {
+	padding: 8px;
+}
+
+.title-gallery>p {
+	text-align: center;
+	color: #ec6b00;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.link-envivo {
+	font-size: 0.7em;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	position: absolute;
+	right: 7px;
+	top: 3px;
+}
+/* unvisited link */
+link-envivo:link {
+	color: white;
+}
+
+/* visited link */
+link-envivo:visited {
+	color: white;
+}
+
+/* mouse over link */
+link-envivo:hover {
+	color: white;
+}
+
+/* selected link */
+link-envivo:active {
+	color: white;
+}
+
+.mdl-card__title {
+	color: white;
+}
+
+.mdl-card__title-text {
+	color: #111;
+}
+
+.mdl-card__title-text-recomendaciones {
+	color: black;
+	align-self: flex-start;
+	font-size: 16px;
+}
+
+div.cuadro-momentos .mdl-card__actions {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+div.cuadro-momentos .texto-fecha {
+	padding: 0px 10px;
+	font-size: 0.8em;
+}
+
+div.cuadro-momentos .mdl-card__supporting-text {
+	padding-bottom: 8px;
+}
+
+div.cuadro-momentos a.mdl-button--colored {
+	line-height: inherit;
+	color: #ec6b00;
+}
+
+/*galeria */
+div.galeria-grid {
+	
+}
+
+div.galeria-grid a {
+	margin: auto;
+}
+
+div.galeria-grid .md-cell {
+	margin: 3px;
+}
+
+div.galeria-grid .demo-card-image__filename {
+	font-size: 0.9em;
+}
+
+div.galeria-grid .mdl-card__actions {
+	height: 32px;
+	padding: 1px;
+	background: none;
+}
+
+/*
+pagina articulo
+*/
+.articulo  .mdl-button--position, .galeria, .mdl-button--position {
+	position: absolute;
+	right: 15px;
+	top: 147px;
+	background: #ec6b00 !important;
+}
+
+.articulo  .mdl-card--article, .galeria  .mdl-card--article {
+	margin: 0;
+	width: 100% !important;
+}
+
+.articulo  .mdl-layout__content, .galeria .mdl-layout__content {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.articulo  .mdl-layout__header, .galeria  .mdl-layout__header {
+	background-color: #fff;
+	color: #fff;
+}
+
+.cnt-img-cob,.cnt-img-looks {
+	text-align: center;
+}
+
+.cnt-img-cob>div,.cnt-img-looks>div {
+	display: inline-block;
+}
+.cnt-img-looks>div{
+	position: relative;
+}
+.cnt-img-looks>div>img{
+	min-height: 140px!important;
+	width: 140px!important;
+	height: 140px!important;
+}
+.cnt-img-looks>div>div{
+	color: #fff;
+	position: absolute;
+	bottom: 8px;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 2;
+	width: 140px;
+	margin: 0px 8px;
+	min-height: 40px;
+}
+
+.tit-hot{
+	text-shadow: 2px 2px 3px #000;
+}
+
+.cnt-mnu-mmnts>a>div{
+	font-size: 0.8em;
+}
+
+.articulo  .demo-card-image.mdl-card {
+	min-height: 140px;
+	width: 140px;
+	height: 140px;
+	background: url('../img/loading-convencion.gif') center/cover !important;
+	background-size: 20px 20px!important;
+	background-repeat: no-repeat!important;
+}
+
+.flecha_ant_gal{
+	left: 5px;
+	bottom: 45%;
+}
+.flecha_sig_gal{
+	right: 5px;
+	bottom: 45%;
+}
+
+.flecha_gal{
+	font-weight: bold;
+	font-size: 3em;
+	color: #fff;
+	position: absolute;
+	text-shadow: 2px 2px 5px black;
+}
+
+.articulo .texto-fecha {
+	font-size: 0.9em;
+}
+
+.articulo .siguiente {
+	margin: 0px 16px;
+}
+
+.articulo .siguiente .div-imagen {
+	float: left;
+	margin-left: 0px;
+}
+
+.articulo .siguiente .div-contenido {
+	margin-left: 170px;
+	padding-top: 6px;
+}
+
+.articulo .siguiente .titulo {
+	font-size: 0.9em;
+	padding: 0px;
+	color: #000;
+	font-weight: bold;
+	display: block;
+}
+
+.articulo .siguiente .texto-fecha {
+	font-size: 0.7em;
+	color: #757575;
+}
+
+.articulo .siguiente .texto {
+	font-size: 0.8em;
+	margin-top: 3px;
+	color: #757575;
+}
+
+.articulo .mdl-card__actions.mdl-card--border {
+	border-top: none;
+}
+
+.articulo .link {
+	font-size: 20px;
+	color: #ec6b00;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.articulo .anterior {
+	margin: 12px 16px 16px 16px;
+}
+
+.articulo .anterior .div-imagen {
+	position: relative;
+}
+
+.articulo .anterior .div-texto {
+	position: absolute;
+	font-size: 0.8em;
+	color: white;
+	bottom: 2px;
+	padding: 4px;
+	width: 150px;
+}
+
+.galeria .mdl-card__title-text {
+	color: #fff;
+}
+
+.galeria  .demo-card-image.mdl-card {
+	min-height: 120px;
+	width: 120px;
+	height: 120px;
+	background: url('../img/album.jpg') center/cover !important;
+}
+
+.foto .mdl-layout__header {
+	/*background-color: #000;*/
+	color: #fff;
+}
+
+.foto .mdl-layout {
+	background-color: #000;
+}
+
+/* section envivo*/
+.envivo .mdl-card__title-text {
+	color: white;
+	position: relative;
+}
+
+.articulo .mdl-button-verlooks {
+	float: none;
+	margin: auto;
+	color: white;
+	background: #ec6b00;
+}
+
+/* horarios */
+.horarios a {
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+.horarios {
+	background: #eee;
+}
+
+.horarios .mdl-layout__content {
+	background: #fff;
+	width: 100%;
+}
+
+.horarios .mdl-layout__tab-bar {
+	height: 48px;
+	margin-bottom: 10px;
+}
+
+.horarios .w3-container {
+	padding: 0px;
+}
+
+.horarios .w3-table {
+	color: #757575;
+}
+
+.horarios .w3-table td {
+	vertical-align: middle;
+}
+
+.horarios .w3-table .w3-btn {
+	padding: 3px 16px;
+	margin-top: 0px;
+	background: #ec6b00;
+	color: white;
+	font-size: 0.9em;
+}
+
+.horarios a.tit-sub-hr {
+	cursor: pointer;
+}
+
+.horarios a.tit-sub-hr-active {
+	font-weight: normal;
+	cursor: pointer;
+	background: #ec6b00;
+	color: white;
+}
+
+.horarios table.w3-theme-l1 tr:nth-child(even) {
+	background-color: #fde1c6;
+}
+
+.look-genero {
+	width: 116px;
+	background: #ec6b00;
+	color: white;
+	margin: auto 14px;
+	height: 33px;
+	min-height: inherit;
+}
+
+.separador2 {
+	color: #babdb6;
+	width: 99%;
+	margin: 10px auto;
+	background: #babdb6;
+	border: 0;
+}
+
+.recomendaciones .mdl-shadow--2dp {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px
+		rgba(0, 0, 0, .2), 0 1px 0px 0 rgba(0, 0, 0, .12)
+}
+
+.hoteles .mdl-card__title-text {
+	color: white;
+}
+
+.digital .mdl-card__title {
+	padding: 16px 6px 0px 16px;
+}
+
+.digital .texto-lector {
+	font-size: 0.8em;
+	color: #757575;
+	padding: 0px 6px 0px 16px;
+}
+
+.digital .mdl-shadow--2dp {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px
+		rgba(0, 0, 0, .2), 0 1px 0px 0 rgba(0, 0, 0, .12);
+}
+
+.lectura {
+	display: block;
+	text-align: center;
+}
+
+.lectura h1 {
+	color: #ec6b00;
+	font-size: 1.5em;
+	margin-top: 64px;
+}
+
+.lectura p {
+	font-size: 1.1em;
+}
+
+.lectura table {
+	margin: 30px auto;
+	font-size: 1.1em;
+}
+
+.lectura table th {
+	padding: 10px;
+	color: #ec6b00;
+}
+
+.lectura table th i {
+	font-size: 2.4em;
+}
+
+.lectura table td {
+	padding: 10px;
+	text-align: left;
+}
+
+.boton-foto {
+	width: 132px;
+	background: #ec6b00;
+	color: white;
+	margin: 0px auto;
+	height: 33px;
+	min-height: inherit;
+}
+
+.boton-enviar {
+	width: 100%;
+	background: #ec6b00;
+	color: white;
+	margin: 20px auto;
+	height: 33px;
+	min-height: inherit;
+}
+
+.layout-mi-informacion {
+	text-align: center;
+}
+
+.recordatorio, #panel-login, #panel-login-1 {
+	margin: 0px 0px;
+	display: block;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px
+		rgba(0, 0, 0, .2), 0 1px 0px 0 rgba(0, 0, 0, .12)
+}
+
+.recordatorio .div-imagen {
+	float: left;
+	margin-left: 12px;
+	margin-top: 12px;
+	color: #ec6b00;
+}
+
+.recordatorio .div-imagen i {
+	font-size: 2.6em;
+}
+
+.recordatorio .div-contenido {
+	margin-left: 70px;
+	padding-top: 6px;
+}
+
+.recordatorio .texto {
+	font-size: 0.8em;
+	margin-top: 3px;
+	color: #757575;
+}
+
+.mdl-card__title1 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/swissotel.jpg') center/cover;
+}
+
+.mdl-card__title2 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/sheraton.jpg') center/cover;
+}
+
+.mdl-card__title3 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/hilton_colon.jpg') center/cover;
+}
+
+.mdl-card__title4 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/wyndham.jpg') center/cover;
+}
+
+.mdl-card__title5 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/nh.jpg') center/cover;
+}
+
+.mdl-card__title6 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/mercure.jpg') center/cover;
+}
+
+.mdl-card__title7 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/dan_carlton.jpg') center/cover;
+}
+
+.mdl-card__title8 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/hotel_quito.jpg') center/cover;
+}
+
+.mdl-card__title9 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/holliday_inn.jpg') center/cover;
+}
+
+.mdl-card__title10 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/marriot.jpg') center/cover;
+}
+
+.js {
+	text-align: center;
+	margin-buttom: 2%;
+	margin-top: 3px;
+	margin-left: 4%;
+	position: absolute;
+}
+
+.jus {
+	text-align: center;
+	margin-buttom: 12%;
+	margin-top: 3px;
+	margin-left: 4%;
+	position: absolute;
+}
+
+.mdl-card__title_res {
+	color: #fff;
+	height: 176px;
+	background: url('../img/antes_convencion_big.jpg') center/cover;
+}
+
+.mdl-card__title_res1 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/hoteles_big.jpg') center/cover;
+}
+
+.mdl-card__title_res2 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/transporte_big.jpg') center/cover;
+}
+
+.mdl-card__title_res3 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/asistencia_medica_big.jpg') center/cover;
+}
+
+.cnt-w-100 {
+	width: 100% !important;
+}
+
+.cnt-pos-abs {
+	position: absolute;
+}
+
+.cnt-pos-fx {
+	position: fixed;
+}
+
+.cnt-hdr-section {
+	width: 100%;
+}
+
+.txt-clr-1 {
+	color: #fff !important;
+}
+
+div#panel-login {
+	display: none;
+}
+
+div#panel-usu-clave {
+	display: none;
+	/*position:absolute;*/
+	height: 100px;
+}
+
+div#panel-usu-clave .mdl-layout-title {
+	font-size: 1.2em;
+	margin-left: 12px;
+}
+
+#hdr-login {
+	background: #ec6b00;
+}
+
+a[disabled] {
+	pointer-events: none;
+}
+
+.btn-iniciar-sesion {
+	width: 128px;
+	background: #ec6b00;
+	color: white;
+	right: 22px;
+	bottom: 22px;
+	height: 33px;
+	min-height: inherit;
+	font-size: 0.9em;
+	position: absolute;
+}
+
+.recordatorio .div-imagen, #panel-login .div-imagen, #panel-login-1 .div-imagen {
+	float: left;
+	margin-left: 12px;
+	margin-top: 12px;
+	color: #ec6b00;
+}
+
+#panel-login .div-imagen i,#panel-login-1 .div-imagen i {
+	font-size: 2.6em;
+}
+
+.recordatorio .div-imagen i {
+	font-size: 4em;
+}
+
+.recordatorio .div-contenido {
+	margin-left: 70px;
+	padding-top: 6px;
+}
+
+#panel-login .div-contenido,#panel-login-1 .div-contenido {
+	margin-left: 70px;
+	padding-top: 12px;
+}
+
+.recordatorio .texto {
+	font-size: 0.8em;
+	margin-top: 3px;
+	color: #757575;
+}
+
+#panel-login .titulo,#panel-login-1 .titulo {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	padding: 0px;
+	color: #757575;
+}
+
+#panel-login .texto,#panel-login-1 .texto {
+	font-size: 0.8em;
+	margin-top: 0px;
+	color: #757575;
+	line-height: normal;
+}
+
+.btn-iniciar-sesion {
+	width: 128px;
+	background: #ec6b00;
+	color: white;
+	right: 22px;
+	bottom: 22px;
+	height: 33px;
+	min-height: inherit;
+	font-size: 0.9em;
+	position: absolute;
+}
+
+.mdl-card__title_envivo {
+	color: #fff;
+	height: 180px;
+	background: url('../img/apertura_ejemplo.jpg') center/cover;
+}
+
+.mdl-card__title_envivo_1 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/gala_ejemplo2.jpg') center/cover;
+}
+
+.mdl-card__title_envivo_2 {
+	color: #fff;
+	height: 176px;
+	background: url('../img/autos_ejemplo.jpg') center/cover;
+}
+
+/*looks---*/
+.card-look {
+	color: #fff;
+	height: 176px;
+}
+
+.hdr-look-1 {
+	background: url('../img/hotel_quito.jpg') center/cover;
+}
+
+.mdl-card__supporting-text p {
+	text-align: justify;
+}
+
+.txt-sz-1 {
+	font-size: 0.8em;
+}
+
+.mdl-rec-lst {
+	min-height: 160px !important;
+}
+
+.crd-tit-clr>h2 {
+	color: #fff !important;
+}
+
+#tituloCobertura {
+	margin-top: 15px;
+}
+
+#cnt-img-full {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: fixed;
+}
+
+#cnt-img-full>div {
+	position: absolute;
+	top: 15%;
+}
+
+#cnt-img-full>div>img {
+	max-width: 100%;
+}
+
+.txt-bld-med {
+	font-size: 0.85em;
+	font-weight: bold;
+}
+
+.txt-lne-hg{
+	line-height: 18px!important;
+}
+
+.txt-bold{
+	font-weight: bold;
+}
+.txt-med {
+	font-size: 0.85em;
+}
+
+/*ENCUESTAS*/
+.btn-encuesta {
+	background-color: #ec6b00;
+	padding: 7px;
+	text-align: center;
+	border-color: #ec6b00;
+	color: #fff;
+	display: inline-block;
+	border-style: none;
+}
+
+.btn-encuesta1 {
+	width: 100%;
+	padding: 15px;
+	font-size: 1.2rem;
+}
+
+.blq-txt-enc {
+	width: 76%;
+	display: inline-block;
+}
+.blq-chk-enc{
+	width: 23%;
+	line-height: 20px;
+	vertical-align: text-bottom;
+	display: inline-block;
+	text-align: right;
+}
+.blq-chk-enc>i{
+	font-size: 3em!important;
+	color:#868589;
+}
+
+.txt-hdr-enc{
+	line-height: 18px;
+}
+
+.btn-encuesta2 {
+	background-color: #ec6b00;
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+	height: 40px;
+	border-style: none;
+	display: inline-block;
+	margin: 1%;
+	color: #fff;
+}
+
+.btn-encuesta3 {
+	background-color: #ec6b00;
+	padding: 27px;
+	font-size: 26px;
+	width: 120%;
+	border-color: #ec6b00;
+	color: #fff;
+	display: inline-block;
+	border-style: none;
+	max-width: 1452px;
+	margin-left: -27px;
+}
+
+.atc-encuesta {
+	text-align: center;
+	margin-top: 13px;
+	font-size: 15px;
+	color: #757575;
+}
+
+.hr-caritas {
+	text-align: center;
+	margin-right: 5%;
+	margin-left: 5%;
+	color: #868589;
+}
+
+.mainPrin {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.estiloCarita {
+	display: inline-block;
+	text-align: center;
+	max-width: 300px;
+	width: 45px;
+	height: 45px;
+	color: #757575;
+}
+
+#contenedorEncuesta {
+	
+}
+
+.txt-tipo-1{
+	padding: 15px;
+	font-size: 1.3em;
+}
+
+.encuestaLetra {
+	font-size: 17px;
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
+#ventanaAyuda {
+	top: 0px;
+	padding: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+.estiloTablaAyuda {
+	font-size: 12px;
+	padding: 2px;
+	margin-right: 15px;
+	margin-left: 25px;
+	justify-content: center;
+}
+
+.estiloCarita2 {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+.tdEstilo {
+	width: 100px;
+	height: 25px;
+	font-size: 1.2em;
+	padding: 7px;
+	font-weight: bold;
+}
+
+.divInternoVentanaEmergente {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 55%;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 15px;
+	text-align: center;
+	max-width: 300px;
+	box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.btn-window-help {
+	background-color: #ec6b00;
+	padding: 7px;
+	text-align: center;
+	border-color: #ec6b00;
+	color: #fff;
+	display: inline-block;
+	border-style: none;
+}
+
+.contenedorCaritas {
+	text-align: center;
+	width: 100%;
+}
+
+.contenedorCaritas article {
+	display: inline-block;
+	text-align: center;
+	margin: 1%;
+}
+
+.tablink {
+	color: black;
+}
+
+.numeros {
+	color: #757575;
+	font-size: 14px;
+}
+
+.Parr {
+	color: #757575;
+	font-size: 0.9em;
+}
+
+.Iter {
+	font-size: 19px;
+}
+
+.position-titulo {
+	text-align: center;
+}
+
+.ico-encuesta {
+	color: #ec6b00;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 65px;
+	line-height: 3;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 16%
+}
+
+.justicar {
+	text-align: justify;;
+	margin-right: 10%;
+}
+
+
+#loading-login{
+	text-align: center;
+}
+
+.hdr-bck-nar{
+	background-color: #ec6b00!important;
+	color: #fff;
+	position: fixed;
+}
+
+.cnt-rec-video i{
+	font-size: 0.9em;
+}
+
+
+
+
+
+
