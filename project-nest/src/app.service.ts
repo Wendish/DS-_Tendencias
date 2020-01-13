@@ -4,14 +4,20 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
 
-  articulos: string[] = ['Espejo', 'Tijera', 'Pelota'];
+  id: number;
+  estudiantes: string[] = ['Santiago', 'Carlos', 'Mario'];
 
-  listaArticulos(): string[] {
-    return this.articulos;
+  listaEstudiantes(): string[] {
+    return this.estudiantes;
   }
 
-  crearArticulo(articulo: string) {
-    this.articulos.push(articulo);
+  crearEstudiantes(estudiante: string) {
+    this.estudiantes.push(estudiante);
+  }
+
+  eliminarEstudiante(estudiante: string) {
+    this.id = this.estudiantes.indexOf(estudiante);
+    this.estudiantes.splice(this.id, 1);
   }
 
 }
